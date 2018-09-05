@@ -1,143 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DrawingTaggingPad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrawingTaggingPad" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gF-xK-2QE">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fJe-6b-wKh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUL-ZG-win">
-                                <rect key="frame" x="10" y="74" width="28" height="28"/>
-                                <state key="normal" image="Undo">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="undo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q3w-dN-8O4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlM-wO-Zfe">
-                                <rect key="frame" x="337" y="74" width="28" height="28"/>
-                                <state key="normal" image="Redo">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="redo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Czs-Ak-CTM"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5V-gv-tpy">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KNJ-Af-vO1">
-                                        <rect key="frame" x="20" y="8" width="335" height="29"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="c3l-Mc-g7V"/>
-                                        </constraints>
-                                        <segments>
-                                            <segment title="铅笔"/>
-                                            <segment title="直尺"/>
-                                            <segment title="虚线"/>
-                                            <segment title="矩形"/>
-                                            <segment title="圆形"/>
-                                            <segment title="橡皮擦"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="switchBrush:" destination="vXZ-lx-hvc" eventType="valueChanged" id="hsM-Ct-1BA"/>
-                                        </connections>
-                                    </segmentedControl>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerY" secondItem="KNJ-Af-vO1" secondAttribute="centerY" id="1FW-lr-eZ8"/>
-                                    <constraint firstItem="KNJ-Af-vO1" firstAttribute="leading" secondItem="x5V-gv-tpy" secondAttribute="leading" constant="20" id="DF1-Ad-RFR"/>
-                                    <constraint firstAttribute="height" constant="44" id="lpD-Ra-iSu"/>
-                                    <constraint firstAttribute="trailing" secondItem="KNJ-Af-vO1" secondAttribute="trailing" constant="20" id="pDu-Au-zth"/>
-                                </constraints>
-                            </view>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNj-IT-0zp">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="LS6-w5-rgv"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem title="画笔设置" id="ffD-u3-cN6">
-                                        <connections>
-                                            <action selector="paintingBrushSettings" destination="vXZ-lx-hvc" id="VEs-aA-Dka"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Z83-Bl-JyM"/>
-                                    <barButtonItem title="背景设置" id="1X1-wH-sGL">
-                                        <connections>
-                                            <action selector="backgroundSettings" destination="vXZ-lx-hvc" id="vpx-Tj-Quu"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DOr-4D-MV8"/>
-                                    <barButtonItem title="保存到图库" id="0iG-0t-GFC">
-                                        <connections>
-                                            <action selector="saveToAlbum" destination="vXZ-lx-hvc" id="oK4-q6-T46"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="x5V-gv-tpy" secondAttribute="trailing" id="3Yt-ho-0Nt"/>
-                            <constraint firstAttribute="trailing" secondItem="UNj-IT-0zp" secondAttribute="trailing" id="8ai-Ct-ibE"/>
-                            <constraint firstItem="x5V-gv-tpy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Gu0-1Y-yg9"/>
-                            <constraint firstItem="rUL-ZG-win" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="HTu-Bu-YVI"/>
-                            <constraint firstAttribute="trailing" secondItem="2gF-xK-2QE" secondAttribute="trailing" id="IY1-j3-wjQ"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2gF-xK-2QE" secondAttribute="bottom" id="K9J-se-3ek"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UNj-IT-0zp" secondAttribute="bottom" symbolic="YES" id="Q3W-5k-Vcq"/>
-                            <constraint firstItem="x5V-gv-tpy" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="TJq-jU-D72"/>
-                            <constraint firstItem="UNj-IT-0zp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Zoe-ec-OBu"/>
-                            <constraint firstItem="2gF-xK-2QE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="egy-qf-per"/>
-                            <constraint firstItem="rUL-ZG-win" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="74" id="f3V-uP-GHP"/>
-                            <constraint firstItem="rUL-ZG-win" firstAttribute="top" secondItem="XlM-wO-Zfe" secondAttribute="top" id="kyY-dG-xdN"/>
-                            <constraint firstAttribute="trailing" secondItem="XlM-wO-Zfe" secondAttribute="trailing" constant="10" id="sWc-vr-RsX"/>
-                            <constraint firstItem="2gF-xK-2QE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="wyJ-fh-Jaz"/>
-                        </constraints>
                     </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <connections>
-                        <outlet property="board" destination="2gF-xK-2QE" id="Bcw-GJ-2nV"/>
-                        <outlet property="drawGraph" destination="2gF-xK-2QE" id="ZTh-rq-YE9"/>
-                        <outlet property="imageView" destination="2gF-xK-2QE" id="NB1-iB-lIC"/>
-                        <outlet property="redoButton" destination="XlM-wO-Zfe" id="CF8-me-kPf"/>
-                        <outlet property="toolbar" destination="UNj-IT-0zp" id="q6r-nx-5rd"/>
-                        <outlet property="toolbarConstraintBottom" destination="Q3W-5k-Vcq" id="vuE-aJ-FXM"/>
-                        <outlet property="toolbarConstraintHeight" destination="LS6-w5-rgv" id="epb-49-jRG"/>
-                        <outlet property="topView" destination="x5V-gv-tpy" id="DIv-fx-YgW"/>
-                        <outlet property="topViewConstraintY" destination="TJq-jU-D72" id="jJN-JW-nOV"/>
-                        <outlet property="undoButton" destination="rUL-ZG-win" id="T8u-Fv-DQ5"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="362" y="415"/>
+            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Redo" width="28" height="28"/>
-        <image name="Undo" width="28" height="28"/>
-    </resources>
 </document>

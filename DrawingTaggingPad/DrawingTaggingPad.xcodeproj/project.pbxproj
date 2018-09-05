@@ -7,35 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C20C8B0213EA7F9001E2D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C20C8AF213EA7F9001E2D43 /* AppDelegate.swift */; };
-		0C20C8B2213EA7F9001E2D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C20C8B1213EA7F9001E2D43 /* ViewController.swift */; };
-		0C20C8B5213EA7F9001E2D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C20C8B3213EA7F9001E2D43 /* Main.storyboard */; };
-		0C20C8B8213EA7F9001E2D43 /* DrawingTaggingPad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C20C8B6213EA7F9001E2D43 /* DrawingTaggingPad.xcdatamodeld */; };
-		0C20C8BA213EA7F9001E2D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C20C8B9213EA7F9001E2D43 /* Assets.xcassets */; };
-		0C20C8BD213EA7F9001E2D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C20C8BB213EA7F9001E2D43 /* LaunchScreen.storyboard */; };
-		0C20C8C6213EA813001E2D43 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C20C8C5213EA813001E2D43 /* Board.swift */; };
-		0C20C8C8213EC2BD001E2D43 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C20C8C7213EC2BD001E2D43 /* Shape.swift */; };
-		0C20C8CA213ECAF2001E2D43 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C20C8C9213ECAF2001E2D43 /* Default-568h@2x.png */; };
-		0C20C8CD213ED98D001E2D43 /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C20C8CC213ED98D001E2D43 /* Pencil.swift */; };
+		0C2336AE213FE2A900AE22A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2336AD213FE2A900AE22A7 /* AppDelegate.swift */; };
+		0C2336B0213FE2A900AE22A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2336AF213FE2A900AE22A7 /* ViewController.swift */; };
+		0C2336B3213FE2A900AE22A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2336B1213FE2A900AE22A7 /* Main.storyboard */; };
+		0C2336B6213FE2A900AE22A7 /* DrawingTaggingPad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C2336B4213FE2A900AE22A7 /* DrawingTaggingPad.xcdatamodeld */; };
+		0C2336B8213FE2A900AE22A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2336B7213FE2A900AE22A7 /* Assets.xcassets */; };
+		0C2336BB213FE2A900AE22A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2336B9213FE2A900AE22A7 /* LaunchScreen.storyboard */; };
+		0C2336C5213FE47300AE22A7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2336C4213FE47300AE22A7 /* Board.swift */; };
+		0C2336C7213FE59D00AE22A7 /* BaseGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2336C6213FE59D00AE22A7 /* BaseGraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C20C8AC213EA7F9001E2D43 /* DrawingTaggingPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingTaggingPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C20C8AF213EA7F9001E2D43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C20C8B1213EA7F9001E2D43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0C20C8B4213EA7F9001E2D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0C20C8B7213EA7F9001E2D43 /* DrawingTaggingPad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrawingTaggingPad.xcdatamodel; sourceTree = "<group>"; };
-		0C20C8B9213EA7F9001E2D43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0C20C8BC213EA7F9001E2D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0C20C8BE213EA7F9001E2D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C20C8C5213EA813001E2D43 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
-		0C20C8C7213EC2BD001E2D43 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
-		0C20C8C9213ECAF2001E2D43 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		0C20C8CC213ED98D001E2D43 /* Pencil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pencil.swift; sourceTree = "<group>"; };
+		0C2336AA213FE2A900AE22A7 /* DrawingTaggingPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingTaggingPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C2336AD213FE2A900AE22A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C2336AF213FE2A900AE22A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C2336B2213FE2A900AE22A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C2336B5213FE2A900AE22A7 /* DrawingTaggingPad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrawingTaggingPad.xcdatamodel; sourceTree = "<group>"; };
+		0C2336B7213FE2A900AE22A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C2336BA213FE2A900AE22A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C2336BC213FE2A900AE22A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C2336C4213FE47300AE22A7 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		0C2336C6213FE59D00AE22A7 /* BaseGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0C20C8A9213EA7F9001E2D43 /* Frameworks */ = {
+		0C2336A7213FE2A900AE22A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,66 +41,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C20C8A3213EA7F9001E2D43 = {
+		0C2336A1213FE2A900AE22A7 = {
 			isa = PBXGroup;
 			children = (
-				0C20C8C9213ECAF2001E2D43 /* Default-568h@2x.png */,
-				0C20C8AE213EA7F9001E2D43 /* DrawingTaggingPad */,
-				0C20C8AD213EA7F9001E2D43 /* Products */,
+				0C2336AC213FE2A900AE22A7 /* DrawingTaggingPad */,
+				0C2336AB213FE2A900AE22A7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0C20C8AD213EA7F9001E2D43 /* Products */ = {
+		0C2336AB213FE2A900AE22A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C20C8AC213EA7F9001E2D43 /* DrawingTaggingPad.app */,
+				0C2336AA213FE2A900AE22A7 /* DrawingTaggingPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C20C8AE213EA7F9001E2D43 /* DrawingTaggingPad */ = {
+		0C2336AC213FE2A900AE22A7 /* DrawingTaggingPad */ = {
 			isa = PBXGroup;
 			children = (
-				0C20C8CB213ED975001E2D43 /* Graphs */,
-				0C20C8C4213EA804001E2D43 /* Base */,
-				0C20C8AF213EA7F9001E2D43 /* AppDelegate.swift */,
-				0C20C8B1213EA7F9001E2D43 /* ViewController.swift */,
-				0C20C8B3213EA7F9001E2D43 /* Main.storyboard */,
-				0C20C8B9213EA7F9001E2D43 /* Assets.xcassets */,
-				0C20C8BB213EA7F9001E2D43 /* LaunchScreen.storyboard */,
-				0C20C8BE213EA7F9001E2D43 /* Info.plist */,
-				0C20C8B6213EA7F9001E2D43 /* DrawingTaggingPad.xcdatamodeld */,
+				0C2336C2213FE3EE00AE22A7 /* Base */,
+				0C2336AD213FE2A900AE22A7 /* AppDelegate.swift */,
+				0C2336AF213FE2A900AE22A7 /* ViewController.swift */,
+				0C2336B1213FE2A900AE22A7 /* Main.storyboard */,
+				0C2336B7213FE2A900AE22A7 /* Assets.xcassets */,
+				0C2336B9213FE2A900AE22A7 /* LaunchScreen.storyboard */,
+				0C2336BC213FE2A900AE22A7 /* Info.plist */,
+				0C2336B4213FE2A900AE22A7 /* DrawingTaggingPad.xcdatamodeld */,
 			);
 			path = DrawingTaggingPad;
 			sourceTree = "<group>";
 		};
-		0C20C8C4213EA804001E2D43 /* Base */ = {
+		0C2336C2213FE3EE00AE22A7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				0C20C8C5213EA813001E2D43 /* Board.swift */,
-				0C20C8C7213EC2BD001E2D43 /* Shape.swift */,
+				0C2336C4213FE47300AE22A7 /* Board.swift */,
+				0C2336C6213FE59D00AE22A7 /* BaseGraph.swift */,
 			);
 			name = Base;
-			sourceTree = "<group>";
-		};
-		0C20C8CB213ED975001E2D43 /* Graphs */ = {
-			isa = PBXGroup;
-			children = (
-				0C20C8CC213ED98D001E2D43 /* Pencil.swift */,
-			);
-			name = Graphs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0C20C8AB213EA7F9001E2D43 /* DrawingTaggingPad */ = {
+		0C2336A9213FE2A900AE22A7 /* DrawingTaggingPad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C20C8C1213EA7F9001E2D43 /* Build configuration list for PBXNativeTarget "DrawingTaggingPad" */;
+			buildConfigurationList = 0C2336BF213FE2A900AE22A7 /* Build configuration list for PBXNativeTarget "DrawingTaggingPad" */;
 			buildPhases = (
-				0C20C8A8213EA7F9001E2D43 /* Sources */,
-				0C20C8A9213EA7F9001E2D43 /* Frameworks */,
-				0C20C8AA213EA7F9001E2D43 /* Resources */,
+				0C2336A6213FE2A900AE22A7 /* Sources */,
+				0C2336A7213FE2A900AE22A7 /* Frameworks */,
+				0C2336A8213FE2A900AE22A7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -112,27 +98,27 @@
 			);
 			name = DrawingTaggingPad;
 			productName = DrawingTaggingPad;
-			productReference = 0C20C8AC213EA7F9001E2D43 /* DrawingTaggingPad.app */;
+			productReference = 0C2336AA213FE2A900AE22A7 /* DrawingTaggingPad.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0C20C8A4213EA7F9001E2D43 /* Project object */ = {
+		0C2336A2213FE2A900AE22A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = NJU.py;
 				TargetAttributes = {
-					0C20C8AB213EA7F9001E2D43 = {
+					0C2336A9213FE2A900AE22A7 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2J6GNK4Q93;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 0C20C8A7213EA7F9001E2D43 /* Build configuration list for PBXProject "DrawingTaggingPad" */;
+			buildConfigurationList = 0C2336A5213FE2A900AE22A7 /* Build configuration list for PBXProject "DrawingTaggingPad" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -140,59 +126,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 0C20C8A3213EA7F9001E2D43;
-			productRefGroup = 0C20C8AD213EA7F9001E2D43 /* Products */;
+			mainGroup = 0C2336A1213FE2A900AE22A7;
+			productRefGroup = 0C2336AB213FE2A900AE22A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C20C8AB213EA7F9001E2D43 /* DrawingTaggingPad */,
+				0C2336A9213FE2A900AE22A7 /* DrawingTaggingPad */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0C20C8AA213EA7F9001E2D43 /* Resources */ = {
+		0C2336A8213FE2A900AE22A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C20C8BD213EA7F9001E2D43 /* LaunchScreen.storyboard in Resources */,
-				0C20C8CA213ECAF2001E2D43 /* Default-568h@2x.png in Resources */,
-				0C20C8BA213EA7F9001E2D43 /* Assets.xcassets in Resources */,
-				0C20C8B5213EA7F9001E2D43 /* Main.storyboard in Resources */,
+				0C2336BB213FE2A900AE22A7 /* LaunchScreen.storyboard in Resources */,
+				0C2336B8213FE2A900AE22A7 /* Assets.xcassets in Resources */,
+				0C2336B3213FE2A900AE22A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0C20C8A8213EA7F9001E2D43 /* Sources */ = {
+		0C2336A6213FE2A900AE22A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C20C8B2213EA7F9001E2D43 /* ViewController.swift in Sources */,
-				0C20C8B0213EA7F9001E2D43 /* AppDelegate.swift in Sources */,
-				0C20C8CD213ED98D001E2D43 /* Pencil.swift in Sources */,
-				0C20C8C6213EA813001E2D43 /* Board.swift in Sources */,
-				0C20C8B8213EA7F9001E2D43 /* DrawingTaggingPad.xcdatamodeld in Sources */,
-				0C20C8C8213EC2BD001E2D43 /* Shape.swift in Sources */,
+				0C2336B0213FE2A900AE22A7 /* ViewController.swift in Sources */,
+				0C2336AE213FE2A900AE22A7 /* AppDelegate.swift in Sources */,
+				0C2336C7213FE59D00AE22A7 /* BaseGraph.swift in Sources */,
+				0C2336C5213FE47300AE22A7 /* Board.swift in Sources */,
+				0C2336B6213FE2A900AE22A7 /* DrawingTaggingPad.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0C20C8B3213EA7F9001E2D43 /* Main.storyboard */ = {
+		0C2336B1213FE2A900AE22A7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0C20C8B4213EA7F9001E2D43 /* Base */,
+				0C2336B2213FE2A900AE22A7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0C20C8BB213EA7F9001E2D43 /* LaunchScreen.storyboard */ = {
+		0C2336B9213FE2A900AE22A7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0C20C8BC213EA7F9001E2D43 /* Base */,
+				0C2336BA213FE2A900AE22A7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -200,7 +184,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0C20C8BF213EA7F9001E2D43 /* Debug */ = {
+		0C2336BD213FE2A900AE22A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -250,7 +234,7 @@
 			};
 			name = Debug;
 		};
-		0C20C8C0213EA7F9001E2D43 /* Release */ = {
+		0C2336BE213FE2A900AE22A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,7 +277,7 @@
 			};
 			name = Release;
 		};
-		0C20C8C2213EA7F9001E2D43 /* Debug */ = {
+		0C2336C0213FE2A900AE22A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -306,7 +290,7 @@
 			};
 			name = Debug;
 		};
-		0C20C8C3213EA7F9001E2D43 /* Release */ = {
+		0C2336C1213FE2A900AE22A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -322,20 +306,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C20C8A7213EA7F9001E2D43 /* Build configuration list for PBXProject "DrawingTaggingPad" */ = {
+		0C2336A5213FE2A900AE22A7 /* Build configuration list for PBXProject "DrawingTaggingPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C20C8BF213EA7F9001E2D43 /* Debug */,
-				0C20C8C0213EA7F9001E2D43 /* Release */,
+				0C2336BD213FE2A900AE22A7 /* Debug */,
+				0C2336BE213FE2A900AE22A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C20C8C1213EA7F9001E2D43 /* Build configuration list for PBXNativeTarget "DrawingTaggingPad" */ = {
+		0C2336BF213FE2A900AE22A7 /* Build configuration list for PBXNativeTarget "DrawingTaggingPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C20C8C2213EA7F9001E2D43 /* Debug */,
-				0C20C8C3213EA7F9001E2D43 /* Release */,
+				0C2336C0213FE2A900AE22A7 /* Debug */,
+				0C2336C1213FE2A900AE22A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -343,17 +327,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0C20C8B6213EA7F9001E2D43 /* DrawingTaggingPad.xcdatamodeld */ = {
+		0C2336B4213FE2A900AE22A7 /* DrawingTaggingPad.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0C20C8B7213EA7F9001E2D43 /* DrawingTaggingPad.xcdatamodel */,
+				0C2336B5213FE2A900AE22A7 /* DrawingTaggingPad.xcdatamodel */,
 			);
-			currentVersion = 0C20C8B7213EA7F9001E2D43 /* DrawingTaggingPad.xcdatamodel */;
+			currentVersion = 0C2336B5213FE2A900AE22A7 /* DrawingTaggingPad.xcdatamodel */;
 			path = DrawingTaggingPad.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 0C20C8A4213EA7F9001E2D43 /* Project object */;
+	rootObject = 0C2336A2213FE2A900AE22A7 /* Project object */;
 }

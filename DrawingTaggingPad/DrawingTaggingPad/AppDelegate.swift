@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  DrawingTaggingPad
 //
-//  Created by py on 2018/9/4.
+//  Created by py on 2018/9/5.
 //  Copyright © 2018年 NJU.py. All rights reserved.
 //
 

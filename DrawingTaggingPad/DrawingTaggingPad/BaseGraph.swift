@@ -1,5 +1,5 @@
 //
-//  Graph.swift
+//  BaseGraph.swift
 //  DrawingTaggingPad
 //
 //  Created by py on 2018/9/4.
@@ -8,14 +8,14 @@
 
 import CoreGraphics
 
-protocol GenerateShape {
+protocol drawGraph {
     
     func supportedContinuousDrawing() -> Bool
     
     func drawInContext(context: CGContext)
 }
 
-class Shape : NSObject, GenerateShape{
+class BaseBrush : NSObject, drawGraph {
     var beginPoint: CGPoint!
     var endPoint: CGPoint!
     var lastPoint: CGPoint?
@@ -27,6 +27,6 @@ class Shape : NSObject, GenerateShape{
     }
     
     func drawInContext(context: CGContext) {
-        assert(false, "Lack the implementation!")
+        assert(false, "must implements in subclass.")
     }
 }

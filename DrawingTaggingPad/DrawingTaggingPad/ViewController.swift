@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  DrawingTaggingPad
 //
-//  Created by py on 2018/9/4.
+//  Created by py on 2018/9/5.
 //  Copyright © 2018年 NJU.py. All rights reserved.
 //
 
@@ -10,15 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    @IBOutlet var drawGraph: UIView!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       
-        
     }
 
     override func didReceiveMemoryWarning() {
