@@ -9,18 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    var shapes = [Pencil()]
-    @IBOutlet var board: Board!
-    @IBAction func drawGraphBase(_ sender: UISegmentedControl) {
-        
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
         
-          self.board.shape = shapes[0]
     }
 
     override func didReceiveMemoryWarning() {
