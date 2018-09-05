@@ -14,30 +14,27 @@ enum state{
 }
 
 class Board: UIImageView{
-    var strokeWidth: CGFloat
+    var strokeWidth: CGFloat = 0.0
     var strokeColor: UIColor
     var shape: Shape?
     
     
     private var currentState: state!
-    private var realImage: UIImage?
+    private var realImage: UIImage!
     
     
     override init(frame: CGRect) {
-        self.strokeColor = UIColor.black
+        self.currentState = state.Begin
         self.strokeWidth = 1
-        super.init(frame: frame)
+        self.strokeColor = UIColor.black
+        super.init(frame: <#T##CGRect#>)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.strokeColor = UIColor.black
-        self.strokeWidth = 1
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
-  
     
-    
-    //Event that begin to touch and move
+       //Event that begin to touch and move
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let shape = self.shape {
             shape.lastPoint = nil
