@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DrawingBoard.xcodeproj">
+      location = "self:/Users/py/GitHub/DrawingTaggingPad/DrawingTaggingPad/DrawingTaggingPad.xcodeproj">
    </FileRef>
 </Workspace>

@@ -47,14 +47,14 @@
 		9C19535F1AC7AEAF008231FE /* BackgroundSettingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundSettingsVC.xib; sourceTree = "<group>"; };
 		9C1953631AC7C394008231FE /* RGBColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBColorPicker.swift; sourceTree = "<group>"; };
 		9CCF258C1ABA7889009A534F /* EraserBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EraserBrush.swift; sourceTree = "<group>"; };
-		9CD69B2E1A90B25900533279 /* DrawingBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD69B2E1A90B25900533279 /* DrawingTaggingPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingTaggingPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD69B321A90B25900533279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CD69B331A90B25900533279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CD69B351A90B25900533279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CD69B381A90B25900533279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CD69B3A1A90B25900533279 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9CD69B3D1A90B25900533279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9CD69B431A90B25900533279 /* DrawingBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD69B431A90B25900533279 /* DrawingTaggingPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingTaggingPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD69B481A90B25900533279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CD69B491A90B25900533279 /* DrawingBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoardTests.swift; sourceTree = "<group>"; };
 		9CDFF6E51AB91738007BD247 /* BaseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBrush.swift; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 		9CD69B2F1A90B25900533279 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CD69B2E1A90B25900533279 /* DrawingBoard.app */,
-				9CD69B431A90B25900533279 /* DrawingBoardTests.xctest */,
+				9CD69B2E1A90B25900533279 /* DrawingTaggingPad.app */,
+				9CD69B431A90B25900533279 /* DrawingTaggingPadTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9CD69B2D1A90B25900533279 /* DrawingBoard */ = {
+		9CD69B2D1A90B25900533279 /* DrawingTaggingPad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CD69B4D1A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingBoard" */;
+			buildConfigurationList = 9CD69B4D1A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingTaggingPad" */;
 			buildPhases = (
 				9CD69B2A1A90B25900533279 /* Sources */,
 				9CD69B2B1A90B25900533279 /* Frameworks */,
@@ -201,14 +201,14 @@
 			);
 			dependencies = (
 			);
-			name = DrawingBoard;
+			name = DrawingTaggingPad;
 			productName = DrawingBoard;
-			productReference = 9CD69B2E1A90B25900533279 /* DrawingBoard.app */;
+			productReference = 9CD69B2E1A90B25900533279 /* DrawingTaggingPad.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9CD69B421A90B25900533279 /* DrawingBoardTests */ = {
+		9CD69B421A90B25900533279 /* DrawingTaggingPadTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CD69B501A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingBoardTests" */;
+			buildConfigurationList = 9CD69B501A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingTaggingPadTests" */;
 			buildPhases = (
 				9CD69B3F1A90B25900533279 /* Sources */,
 				9CD69B401A90B25900533279 /* Frameworks */,
@@ -219,9 +219,9 @@
 			dependencies = (
 				9CD69B451A90B25900533279 /* PBXTargetDependency */,
 			);
-			name = DrawingBoardTests;
+			name = DrawingTaggingPadTests;
 			productName = DrawingBoardTests;
-			productReference = 9CD69B431A90B25900533279 /* DrawingBoardTests.xctest */;
+			productReference = 9CD69B431A90B25900533279 /* DrawingTaggingPadTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -232,7 +232,7 @@
 			attributes = {
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = NJU.py;
 				TargetAttributes = {
 					9CD69B2D1A90B25900533279 = {
@@ -247,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9CD69B291A90B25900533279 /* Build configuration list for PBXProject "DrawingBoard" */;
+			buildConfigurationList = 9CD69B291A90B25900533279 /* Build configuration list for PBXProject "DrawingTaggingPad" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -260,8 +260,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9CD69B2D1A90B25900533279 /* DrawingBoard */,
-				9CD69B421A90B25900533279 /* DrawingBoardTests */,
+				9CD69B2D1A90B25900533279 /* DrawingTaggingPad */,
+				9CD69B421A90B25900533279 /* DrawingTaggingPadTests */,
 			);
 		};
 /* End PBXProject section */
@@ -323,7 +323,7 @@
 /* Begin PBXTargetDependency section */
 		9CD69B451A90B25900533279 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9CD69B2D1A90B25900533279 /* DrawingBoard */;
+			target = 9CD69B2D1A90B25900533279 /* DrawingTaggingPad */;
 			targetProxy = 9CD69B441A90B25900533279 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -361,15 +361,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -403,8 +407,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -412,6 +418,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -421,6 +428,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -435,6 +443,7 @@
 				INFOPLIST_FILE = DrawingBoard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -451,6 +460,7 @@
 				INFOPLIST_FILE = DrawingBoard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -471,9 +481,10 @@
 				);
 				INFOPLIST_FILE = DrawingBoardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawingBoard.app/DrawingBoard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawingTaggingPad.app/DrawingTaggingPad";
 			};
 			name = Debug;
 		};
@@ -487,16 +498,17 @@
 				);
 				INFOPLIST_FILE = DrawingBoardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangao.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawingBoard.app/DrawingBoard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawingTaggingPad.app/DrawingTaggingPad";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9CD69B291A90B25900533279 /* Build configuration list for PBXProject "DrawingBoard" */ = {
+		9CD69B291A90B25900533279 /* Build configuration list for PBXProject "DrawingTaggingPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CD69B4B1A90B25A00533279 /* Debug */,
@@ -505,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CD69B4D1A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingBoard" */ = {
+		9CD69B4D1A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingTaggingPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CD69B4E1A90B25A00533279 /* Debug */,
@@ -514,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CD69B501A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingBoardTests" */ = {
+		9CD69B501A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingTaggingPadTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CD69B511A90B25A00533279 /* Debug */,
