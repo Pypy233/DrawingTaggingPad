@@ -1,21 +1,19 @@
 //
-//  BaseGraph.swift
-//  DrawingTaggingPad
-//
-//  Created by py on 2018/9/4.
+//  BaseBrush.swift
+//  DrawingBoard
+// Created by py on 2018/9/3.
 //  Copyright © 2018年 NJU.py. All rights reserved.
-//
 
 import CoreGraphics
 
-protocol drawGraph {
+protocol PaintBrush {
     
     func supportedContinuousDrawing() -> Bool
     
-    func drawInContext(context: CGContext)
+    func drawInContext(_ context: CGContext)
 }
 
-class BaseBrush : NSObject, drawGraph {
+class BaseBrush : NSObject, PaintBrush {
     var beginPoint: CGPoint!
     var endPoint: CGPoint!
     var lastPoint: CGPoint?
@@ -26,7 +24,7 @@ class BaseBrush : NSObject, drawGraph {
         return false
     }
     
-    func drawInContext(context: CGContext) {
+    func drawInContext(_ context: CGContext) {
         assert(false, "must implements in subclass.")
     }
 }
