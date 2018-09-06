@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C8814602140FA1D00D36C47 /* TriangleBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88145F2140FA1D00D36C47 /* TriangleBrush.swift */; };
+		0C88146321410D2E00D36C47 /* UITextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88146221410D2E00D36C47 /* UITextFieldController.swift */; };
+		0C881467214165F500D36C47 /* CharacterBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C881466214165F500D36C47 /* CharacterBrush.swift */; };
 		9C19535A1AC7AE2A008231FE /* PaintingBrushSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1953581AC7AE2A008231FE /* PaintingBrushSettingsView.swift */; };
 		9C19535B1AC7AE2A008231FE /* PaintingBrushSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C1953591AC7AE2A008231FE /* PaintingBrushSettingsView.xib */; };
 		9C19535E1AC7AE4C008231FE /* BackgroundSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19535D1AC7AE4C008231FE /* BackgroundSettingsVC.swift */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		0C88145F2140FA1D00D36C47 /* TriangleBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleBrush.swift; sourceTree = "<group>"; };
+		0C88146221410D2E00D36C47 /* UITextFieldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldController.swift; sourceTree = "<group>"; };
+		0C881466214165F500D36C47 /* CharacterBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterBrush.swift; sourceTree = "<group>"; };
 		9C1953581AC7AE2A008231FE /* PaintingBrushSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintingBrushSettingsView.swift; sourceTree = "<group>"; };
 		9C1953591AC7AE2A008231FE /* PaintingBrushSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaintingBrushSettingsView.xib; sourceTree = "<group>"; };
 		9C19535D1AC7AE4C008231FE /* BackgroundSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundSettingsVC.swift; sourceTree = "<group>"; };
@@ -84,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C88146121410D0E00D36C47 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0C88146221410D2E00D36C47 /* UITextFieldController.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		9C1953571AC7AE2A008231FE /* PaintingBrushSettingsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +135,7 @@
 		9CD69B301A90B25900533279 /* DrawingBoard */ = {
 			isa = PBXGroup;
 			children = (
+				0C88146121410D0E00D36C47 /* Util */,
 				9CDFF6E41AB91738007BD247 /* Base */,
 				9CDFF6E91AB91894007BD247 /* Brushes */,
 				9C1953571AC7AE2A008231FE /* PaintingBrushSettingsView */,
@@ -182,6 +195,7 @@
 				9CDFF6EB1AB91894007BD247 /* EllipseBrush.swift */,
 				9CCF258C1ABA7889009A534F /* EraserBrush.swift */,
 				0C88145F2140FA1D00D36C47 /* TriangleBrush.swift */,
+				0C881466214165F500D36C47 /* CharacterBrush.swift */,
 			);
 			path = Brushes;
 			sourceTree = "<group>";
@@ -293,10 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C881467214165F500D36C47 /* CharacterBrush.swift in Sources */,
 				9CCF258D1ABA7889009A534F /* EraserBrush.swift in Sources */,
 				9C19535A1AC7AE2A008231FE /* PaintingBrushSettingsView.swift in Sources */,
 				0C8814602140FA1D00D36C47 /* TriangleBrush.swift in Sources */,
 				9CDFF6F11AB91894007BD247 /* RectangleBrush.swift in Sources */,
+				0C88146321410D2E00D36C47 /* UITextFieldController.swift in Sources */,
 				9CDFF6EE1AB91894007BD247 /* DashLineBrush.swift in Sources */,
 				9CDFF6F31AB91B53007BD247 /* PencilBrush.swift in Sources */,
 				9CDFF6E71AB91738007BD247 /* BaseBrush.swift in Sources */,

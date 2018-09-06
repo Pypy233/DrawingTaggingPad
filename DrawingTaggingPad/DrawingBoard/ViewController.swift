@@ -4,13 +4,15 @@
 //
 //   Created by py on 2018/9/6.
 //  Copyright © 2018年 NJU.py. All rights reserved.
+
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    var brushes = [PencilBrush(), LineBrush(), DashLineBrush(), RectangleBrush(), EllipseBrush(), EraserBrush()]
+    var brushes = [PencilBrush()]
+    
     
     @IBOutlet var board: Board!
     @IBOutlet var topView: UIView!
@@ -147,12 +149,59 @@ class ViewController: UIViewController {
             UIAlertView(title: "提示", message: "保存成功", delegate: nil, cancelButtonTitle: "确定").show()
         }
     }
+    
+    func clickTagBtn(_ sender: UIButton) {
+        let alertController = UIAlertController.init(title: "提示", message: "标注成功", preferredStyle:.alert)
+        let cancel = UIAlertAction.init(title: "好的", style: UIAlertActionStyle.cancel) { (action:UIAlertAction) ->() in
+            print("处理完成\(action)")
+            let frame = CGRect(x: 30, y: 30, width: 250, height: 100)
+            let cgView = UIView(frame: frame)
+            self.view.addSubview(cgView)
+        }
+        alertController.addAction(cancel);
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func clickInputBtn() {
+        //初始化UITextField
+        var inputText:UITextField = UITextField();
+        let msgAlertCtr = UIAlertController.init(title: "提示", message: "请输入标注", preferredStyle: .alert)
+        let ok = UIAlertAction.init(title: "确定", style:.default) { (action:UIAlertAction) ->() in
+                print("你输入的是：\(String(describing: inputText.text))")
+            
+            let stringContent = inputText.text
+            let magentaColor = UIColor.green
+            let helveticaBold = UIFont.init(name: "HelveticaNeue-Bold", size: 30.0);
+            stringContent?.draw(at: CGPoint(x: 20, y: 100), withAttributes:[NSFontAttributeName: helveticaBold!,  NSForegroundColorAttributeName: magentaColor])
+            
+        }
+        
+        let cancel = UIAlertAction.init(title: "取消", style:.cancel) { (action:UIAlertAction) -> ()in
+            print("取消输入")
+        }
+        
+        msgAlertCtr.addAction(ok)
+        msgAlertCtr.addAction(cancel)
+        //添加textField输入框
+        msgAlertCtr.addTextField { (textField) in
+            //设置传入的textField为初始化UITextField
+            inputText = textField
+            inputText.placeholder = "输入标注"
+        }
+        //设置到当前视图
+        self.present(msgAlertCtr, animated: true, completion: nil)
+    }
+
 
 
     @IBAction func switchBrush(_ sender: UISegmentedControl) {
+        let functonCount = 0
         assert(sender.tag < self.brushes.count, "!!!")
-        
-        self.board.brush = self.brushes[sender.selectedSegmentIndex]
+        if(sender.selectedSegmentIndex <= functonCount){
+            self.board.brush = self.brushes[sender.selectedSegmentIndex]
+        }else{
+          
+        }
     }
     
     @IBAction func undo(_ sender: UIButton) {
