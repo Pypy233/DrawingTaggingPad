@@ -10,6 +10,9 @@
 		0C8814602140FA1D00D36C47 /* TriangleBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88145F2140FA1D00D36C47 /* TriangleBrush.swift */; };
 		0C88146321410D2E00D36C47 /* UITextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88146221410D2E00D36C47 /* UITextFieldController.swift */; };
 		0C881467214165F500D36C47 /* CharacterBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C881466214165F500D36C47 /* CharacterBrush.swift */; };
+		0CFC34542145088E00378244 /* ShapeRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC34532145088E00378244 /* ShapeRecognizer.swift */; };
+		0CFC345721453D3300378244 /* SwiftUnistroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC345621453D3300378244 /* SwiftUnistroke.swift */; };
+		0CFC345C2145431000378244 /* Templates in Resources */ = {isa = PBXBuildFile; fileRef = 0CFC345B2145431000378244 /* Templates */; };
 		9C19535A1AC7AE2A008231FE /* PaintingBrushSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1953581AC7AE2A008231FE /* PaintingBrushSettingsView.swift */; };
 		9C19535B1AC7AE2A008231FE /* PaintingBrushSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C1953591AC7AE2A008231FE /* PaintingBrushSettingsView.xib */; };
 		9C19535E1AC7AE4C008231FE /* BackgroundSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19535D1AC7AE4C008231FE /* BackgroundSettingsVC.swift */; };
@@ -45,6 +48,9 @@
 		0C88145F2140FA1D00D36C47 /* TriangleBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleBrush.swift; sourceTree = "<group>"; };
 		0C88146221410D2E00D36C47 /* UITextFieldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldController.swift; sourceTree = "<group>"; };
 		0C881466214165F500D36C47 /* CharacterBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterBrush.swift; sourceTree = "<group>"; };
+		0CFC34532145088E00378244 /* ShapeRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeRecognizer.swift; sourceTree = "<group>"; };
+		0CFC345621453D3300378244 /* SwiftUnistroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUnistroke.swift; sourceTree = "<group>"; };
+		0CFC345B2145431000378244 /* Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Templates; sourceTree = "<group>"; };
 		9C1953581AC7AE2A008231FE /* PaintingBrushSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintingBrushSettingsView.swift; sourceTree = "<group>"; };
 		9C1953591AC7AE2A008231FE /* PaintingBrushSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaintingBrushSettingsView.xib; sourceTree = "<group>"; };
 		9C19535D1AC7AE4C008231FE /* BackgroundSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundSettingsVC.swift; sourceTree = "<group>"; };
@@ -92,8 +98,17 @@
 			isa = PBXGroup;
 			children = (
 				0C88146221410D2E00D36C47 /* UITextFieldController.swift */,
+				0CFC34532145088E00378244 /* ShapeRecognizer.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		0CFC345521453C5F00378244 /* SwiftOneStroke */ = {
+			isa = PBXGroup;
+			children = (
+				0CFC345621453D3300378244 /* SwiftUnistroke.swift */,
+			);
+			name = SwiftOneStroke;
 			sourceTree = "<group>";
 		};
 		9C1953571AC7AE2A008231FE /* PaintingBrushSettingsView */ = {
@@ -117,8 +132,8 @@
 		9CD69B251A90B25900533279 = {
 			isa = PBXGroup;
 			children = (
-				9CD69B301A90B25900533279 /* DrawingBoard */,
-				9CD69B461A90B25900533279 /* DrawingBoardTests */,
+				9CD69B301A90B25900533279 /* DrawingTaggingPad */,
+				9CD69B461A90B25900533279 /* DrawingTaggingPadTests */,
 				9CD69B2F1A90B25900533279 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,9 +147,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CD69B301A90B25900533279 /* DrawingBoard */ = {
+		9CD69B301A90B25900533279 /* DrawingTaggingPad */ = {
 			isa = PBXGroup;
 			children = (
+				0CFC345B2145431000378244 /* Templates */,
+				0CFC345521453C5F00378244 /* SwiftOneStroke */,
 				0C88146121410D0E00D36C47 /* Util */,
 				9CDFF6E41AB91738007BD247 /* Base */,
 				9CDFF6E91AB91894007BD247 /* Brushes */,
@@ -148,6 +165,7 @@
 				9CD69B3C1A90B25900533279 /* LaunchScreen.xib */,
 				9CD69B311A90B25900533279 /* Supporting Files */,
 			);
+			name = DrawingTaggingPad;
 			path = DrawingBoard;
 			sourceTree = "<group>";
 		};
@@ -159,12 +177,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9CD69B461A90B25900533279 /* DrawingBoardTests */ = {
+		9CD69B461A90B25900533279 /* DrawingTaggingPadTests */ = {
 			isa = PBXGroup;
 			children = (
 				9CD69B491A90B25900533279 /* DrawingBoardTests.swift */,
 				9CD69B471A90B25900533279 /* Supporting Files */,
 			);
+			name = DrawingTaggingPadTests;
 			path = DrawingBoardTests;
 			sourceTree = "<group>";
 		};
@@ -244,6 +263,10 @@
 		9CD69B261A90B25900533279 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+					Templates,
+				);
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0830;
@@ -288,6 +311,7 @@
 				9CD69B391A90B25900533279 /* Main.storyboard in Resources */,
 				9C19535B1AC7AE2A008231FE /* PaintingBrushSettingsView.xib in Resources */,
 				9C1953601AC7AEAF008231FE /* BackgroundSettingsVC.xib in Resources */,
+				0CFC345C2145431000378244 /* Templates in Resources */,
 				9CD69B3E1A90B25900533279 /* LaunchScreen.xib in Resources */,
 				9CD69B3B1A90B25900533279 /* Images.xcassets in Resources */,
 			);
@@ -309,6 +333,7 @@
 			files = (
 				0C881467214165F500D36C47 /* CharacterBrush.swift in Sources */,
 				9CCF258D1ABA7889009A534F /* EraserBrush.swift in Sources */,
+				0CFC345721453D3300378244 /* SwiftUnistroke.swift in Sources */,
 				9C19535A1AC7AE2A008231FE /* PaintingBrushSettingsView.swift in Sources */,
 				0C8814602140FA1D00D36C47 /* TriangleBrush.swift in Sources */,
 				9CDFF6F11AB91894007BD247 /* RectangleBrush.swift in Sources */,
@@ -323,6 +348,7 @@
 				9CD69B341A90B25900533279 /* AppDelegate.swift in Sources */,
 				9CDFF6F01AB91894007BD247 /* LineBrush.swift in Sources */,
 				9CDFF6E81AB91738007BD247 /* Board.swift in Sources */,
+				0CFC34542145088E00378244 /* ShapeRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
