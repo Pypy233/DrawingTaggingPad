@@ -14,7 +14,7 @@ class ShapeRecognizer{
         case Rectangle, Triangle, Circle, Square;
     }
     fileprivate var loadedTemplates	:[SwiftUnistrokeTemplate] = []
-    fileprivate func loadTemplatesDirectory() {
+    func loadTemplatesDirectory() {
         do {
             // Load template files
             let templatesFolder = Bundle.main.resourcePath! + "/Templates"
@@ -38,20 +38,10 @@ class ShapeRecognizer{
                 loadedTemplates.append(templateObj)
                 print("  - Loaded template '\(templateName)' with \(templateObj.points.count) points inside")
                 
-                // For each template get its preview and show them inside the bottom screen scroll view
-//                let templateView = UIImageView(frame: CGRect(x: x,y: 0,width: size,height: size))
-//                templateView.image = UIImage(named: templateImage)
-//                templateView.contentMode = UIViewContentMode.scaleAspectFit
-//                templateView.layer.borderColor = UIColor.lightGray.cgColor
-//                templateView.layer.borderWidth = 2
             }
             
             print("- \(loadedTemplates.count) templates are now loaded!")
             
-            // setup scroll view size
-//            templatesScrollView.contentSize = CGSize(width: x+CGFloat(2*loadedTemplates.count), height: size)
-//            templatesScrollView.backgroundColor = UIColor.white
-//            labelTemplates.text = "\(loadedTemplates.count) TEMPLATES LOADED:"
         } catch (let error as NSError) {
             print("Something went wrong while loading templates: \(error.localizedDescription)")
         }

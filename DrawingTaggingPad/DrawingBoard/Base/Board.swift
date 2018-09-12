@@ -14,6 +14,7 @@ enum DrawingState {
 
 class Board: UIImageView {
 
+
     // UndoManager，用于实现 Undo 操作和维护图片栈的内存
     fileprivate class DBUndoManager {
         class DBImageFault: UIImage {}  // 一个 Fault 对象，与 Core Data 中的 Fault 设计类似
@@ -118,6 +119,8 @@ class Board: UIImageView {
     
     var drawingStateChangedBlock: ((_ state: DrawingState) -> ())?
     
+    var drawingPoints = [StrokePoint]()
+    
     fileprivate var realImage: UIImage?
     fileprivate var boardUndoManager = DBUndoManager() // 缓存或Undo控制器
     
@@ -126,7 +129,6 @@ class Board: UIImageView {
     override init(frame: CGRect) {
         self.strokeColor = UIColor.black
         self.strokeWidth = 1
-        
         super.init(frame: frame)
     }
 
@@ -194,9 +196,9 @@ class Board: UIImageView {
             
             brush.beginPoint = touches.first!.location(in: self)
             brush.endPoint = brush.beginPoint
-			
+			print(brush.beginPoint)
             self.drawingState = .began
-            
+            self.drawingPoints.removeAll()
             self.drawingImage()
         }
     }
@@ -204,9 +206,13 @@ class Board: UIImageView {
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let brush = self.brush {
             brush.endPoint = touches.first!.location(in: self)
+            let point = touches.first!.location(in: self)
+            if !containPoint(point: StrokePoint(x: Double(point.x), y: Double(point.y))){
+                drawingPoints.append(StrokePoint(point: point))
+            }
             
             self.drawingState = .moved
-            
+         //   print(brush.endPoint)
             self.drawingImage()
         }
     }
@@ -220,7 +226,10 @@ class Board: UIImageView {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let brush = self.brush {
             brush.endPoint = touches.first!.location(in: self)
-            
+            let point = touches.first!.location(in: self)
+            if !containPoint(point: StrokePoint(x: Double(point.x), y: Double(point.y))){
+                drawingPoints.append(StrokePoint(point: point))
+            }
             self.drawingState = .ended
             
             self.drawingImage()
@@ -271,5 +280,14 @@ class Board: UIImageView {
             
             brush.lastPoint = brush.endPoint
         }
+    }
+    
+    func containPoint(point: StrokePoint) -> Bool{
+        for ordinaryPoint in self.drawingPoints{
+            if ordinaryPoint.x == point.x && ordinaryPoint.y == point.y{
+                return true
+            }
+        }
+        return false
     }
 }

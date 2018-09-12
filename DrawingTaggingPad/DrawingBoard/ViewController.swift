@@ -23,6 +23,12 @@ class ViewController: UIViewController {
     var toolbarEditingItems: [UIBarButtonItem]?
     var currentSettingsView: UIView?
     
+    var formatDrawingPoints = [StrokePoint]()
+    
+    
+    fileprivate var loadedTemplates			:[SwiftUnistrokeTemplate] = []
+
+    
     @IBOutlet var topViewConstraintY: NSLayoutConstraint!
     @IBOutlet var toolbarConstraintBottom: NSLayoutConstraint!
     @IBOutlet var toolbarConstraintHeight: NSLayoutConstraint!
@@ -41,7 +47,7 @@ class ViewController: UIViewController {
 
         self.setupBrushSettingsView()
         self.setupBackgroundSettingsView()
-        
+    
         self.board.drawingStateChangedBlock = {(state: DrawingState) -> () in
             if state != .moved {
                 UIView.beginAnimations(nil, context: nil)
@@ -54,8 +60,12 @@ class ViewController: UIViewController {
                     
                     self.undoButton.alpha = 0
                     self.redoButton.alpha = 0
+                    
+                    
+                  //  self.recognizeShape()
                 } else if state == .ended {
                     UIView.setAnimationDelay(1.0)
+                    self.recognizeShape()
                     self.topViewConstraintY.constant = 0
                     self.toolbarConstraintBottom.constant = 0
                     
@@ -240,6 +250,44 @@ class ViewController: UIViewController {
         UIView.commitAnimations()
         
         self.currentSettingsView?.isHidden = true
+    }
+    
+    
+    func recognizeShape(){
+        let drawingPoints = self.board.drawingPoints
+        let recognizer = ShapeRecognizer()
+        recognizer.loadTemplatesDirectory()
+        print(drawingPoints)
+       
+        let strokeRecognizer = SwiftUnistroke(points: drawingPoints)
+        
+        do {
+            let (template,distance) = try strokeRecognizer.recognizeIn(self.loadedTemplates, useProtractor:  true)
+          //  formatDrawingPoints = []
+            var title: String = ""
+            var message: String = ""
+            if template != nil {
+                title = "Gesture Recognized!"
+                message = "Let me try...is it a \(template!.name.uppercased())?"
+                print("[FOUND] Template found is \(template!.name) with distance: \(distance!)")
+            } else {
+                print("[FAILED] Template not found")
+                title = "Ops...!"
+                message = "I cannot recognize this gesture. So sad my dear..."
+            }
+            let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+            let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+            alert.addAction(okButton)
+            self.present(alert, animated: true, completion: nil)
+            
+        } catch (let error as NSError) {
+            print("[FAILED] Error: \(error.localizedDescription)")
+            
+            let alert = UIAlertController(title: "Ops, something wrong happened!", message: "\(error.localizedDescription)", preferredStyle: UIAlertControllerStyle.alert)
+            let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+            alert.addAction(okButton)
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }
 

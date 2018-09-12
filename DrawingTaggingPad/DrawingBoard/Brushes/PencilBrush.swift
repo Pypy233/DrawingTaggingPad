@@ -23,4 +23,5 @@ class PencilBrush: BaseBrush {
     override func supportedContinuousDrawing() -> Bool {
         return true
     }
+    
 }
