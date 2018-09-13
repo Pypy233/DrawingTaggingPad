@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChromaColorPicker
 
 class ViewController: UIViewController {
 	fileprivate var loadedTemplates			:[SwiftUnistrokeTemplate] = []
@@ -64,6 +65,15 @@ class ViewController: UIViewController {
             
             let strokeRecognizer = SwiftUnistroke(points: drawnPoints!)
             
+            /**
+             test the picker
+             
+             **/
+          
+            /*
+             end
+             
+             */
             
         
 			do {
