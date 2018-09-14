@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0C17EAD02147AA650098204B /* UIBezierPathShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C17EACF2147AA650098204B /* UIBezierPathShape.swift */; };
-		0C4CF701214A446E00201FA5 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4CF700214A446E00201FA5 /* ColorPickerView.swift */; };
+		0CFAD260214B8E7800BD3EE4 /* StrokeAttributeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */; };
+		0CFAD266214B99D900BD3EE4 /* ShapeRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD265214B99D900BD3EE4 /* ShapeRecognizer.swift */; };
+		0CFAD26B214BA72900BD3EE4 /* LocalNotifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */; };
+		0CFAD26E214BA77900BD3EE4 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */; };
 		0CFC345E214561F100378244 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC345D214561F100378244 /* ShapeView.swift */; };
 		39F522C56E44BE92E63606A1 /* Pods_DrawingTaggingPadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE98A5918F1E6A97BB764C8 /* Pods_DrawingTaggingPadUITests.framework */; };
 		4A5D6C55A3C6C140274D5E64 /* Pods_DrawingTaggingPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1C831F042EDDDA45A05C45 /* Pods_DrawingTaggingPad.framework */; };
@@ -44,14 +47,17 @@
 
 /* Begin PBXFileReference section */
 		0C17EACF2147AA650098204B /* UIBezierPathShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPathShape.swift; sourceTree = "<group>"; };
-		0C4CF700214A446E00201FA5 /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeAttributeController.swift; sourceTree = "<group>"; };
+		0CFAD265214B99D900BD3EE4 /* ShapeRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeRecognizer.swift; sourceTree = "<group>"; };
+		0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotifManager.swift; sourceTree = "<group>"; };
+		0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		0CFC345D214561F100378244 /* ShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		2DE1BECE3C16557D1D022BDE /* Pods-DrawingTaggingPadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawingTaggingPadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawingTaggingPadTests/Pods-DrawingTaggingPadTests.release.xcconfig"; sourceTree = "<group>"; };
 		4B45DBA5684245E373F69B96 /* Pods-DrawingTaggingPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawingTaggingPad.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawingTaggingPad/Pods-DrawingTaggingPad.release.xcconfig"; sourceTree = "<group>"; };
 		56356B95BE2AFC9EEC9EB55C /* Pods-DrawingTaggingPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawingTaggingPadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawingTaggingPadUITests/Pods-DrawingTaggingPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		64341C901BBED5510031D7C9 /* DrawingTaggingPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingTaggingPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64341C931BBED5510031D7C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64341C951BBED5510031D7C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64341C951BBED5510031D7C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = SwiftOneStroke/ViewController.swift; sourceTree = "<group>"; };
 		64341C981BBED5510031D7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64341C9A1BBED5510031D7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64341C9D1BBED5510031D7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,16 +112,42 @@
 			children = (
 				6495EEF61BC15DED00B57B99 /* StrokeView.swift */,
 				0CFC345D214561F100378244 /* ShapeView.swift */,
-				0C4CF700214A446E00201FA5 /* ColorPickerView.swift */,
 			);
 			name = Shape;
 			sourceTree = "<group>";
 		};
-		0C4CF6FD214A43AB00201FA5 /* Controller */ = {
+		0CFAD25E214B8E5E00BD3EE4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				64341C951BBED5510031D7C9 /* ViewController.swift */,
+				0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */,
 			);
 			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0CFAD264214B99C000BD3EE4 /* ShapeRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				0CFAD265214B99D900BD3EE4 /* ShapeRecognizer.swift */,
+			);
+			name = ShapeRecognizer;
+			sourceTree = "<group>";
+		};
+		0CFAD269214BA71900BD3EE4 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		0CFAD26C214BA76C00BD3EE4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		64341C871BBED5510031D7C9 = {
@@ -143,11 +175,13 @@
 		64341C921BBED5510031D7C9 /* DrawingTaggingPad */ = {
 			isa = PBXGroup;
 			children = (
-				0C4CF6FD214A43AB00201FA5 /* Controller */,
+				0CFAD26C214BA76C00BD3EE4 /* Util */,
+				0CFAD269214BA71900BD3EE4 /* Notification */,
+				0CFAD264214B99C000BD3EE4 /* ShapeRecognizer */,
+				0CFAD25E214B8E5E00BD3EE4 /* Controller */,
 				0C4CF6E42148A0C100201FA5 /* Shape */,
 				648EF9FC1BC83E3C0063243A /* SwiftUnistroke Library */,
 				64341C931BBED5510031D7C9 /* AppDelegate.swift */,
-				64341C951BBED5510031D7C9 /* ViewController.swift */,
 				64341C9C1BBED5510031D7C9 /* LaunchScreen.storyboard */,
 				64341C971BBED5510031D7C9 /* Main.storyboard */,
 				6495EEF31BC1539100B57B99 /* Templates */,
@@ -424,11 +458,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CFC345E214561F100378244 /* ShapeView.swift in Sources */,
+				0CFAD26E214BA77900BD3EE4 /* DateUtil.swift in Sources */,
 				648EF9FB1BC83E240063243A /* SwiftUnistroke.swift in Sources */,
+				0CFAD266214B99D900BD3EE4 /* ShapeRecognizer.swift in Sources */,
 				64341C961BBED5510031D7C9 /* ViewController.swift in Sources */,
-				0C4CF701214A446E00201FA5 /* ColorPickerView.swift in Sources */,
+				0CFAD260214B8E7800BD3EE4 /* StrokeAttributeController.swift in Sources */,
 				6495EEF71BC15DED00B57B99 /* StrokeView.swift in Sources */,
 				64341C941BBED5510031D7C9 /* AppDelegate.swift in Sources */,
+				0CFAD26B214BA72900BD3EE4 /* LocalNotifManager.swift in Sources */,
 				0C17EAD02147AA650098204B /* UIBezierPathShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

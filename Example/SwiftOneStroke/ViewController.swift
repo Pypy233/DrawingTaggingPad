@@ -15,7 +15,9 @@ class ViewController: UIViewController {
 	@IBOutlet var drawView				:StrokeView!
 	@IBOutlet var templatesScrollView	:UIScrollView!
 	@IBOutlet var labelTemplates		:UILabel!
-	
+    
+	let POINTS_LEAST_NUMBER = 5  // 绘图板上一划点集的最小数
+    
     @IBAction func saveToAlbum(_ sender: UIButton) {
         if #available(iOS 10.0, *) {
             let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
@@ -49,8 +51,8 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		loadTemplatesDirectory()
-		
-		drawView.backgroundColor = UIColor.cyan
+        LocalNotifManager().setInnerNotification()
+        drawView.backgroundColor = UIColor.white
 		// we set a completion handler called on touchesCancelled/End which
 		// grab drawn points and pass them to the one stroke recognizer class
 		drawView.onDidFinishDrawing = { drawnPoints in
@@ -58,23 +60,13 @@ class ViewController: UIViewController {
 				return
 			}
 			
-			if drawnPoints!.count < 5 {
+			if drawnPoints!.count < self.POINTS_LEAST_NUMBER {
 				return
 			}
-            print(drawnPoints!)
+           // print(drawnPoints!)
             
             let strokeRecognizer = SwiftUnistroke(points: drawnPoints!)
-            
-            /**
-             test the picker
-             
-             **/
-          
-            /*
-             end
-             
-             */
-            
+         
         
 			do {
 				let (template,distance) = try strokeRecognizer.recognizeIn(self.loadedTemplates, useProtractor:  false)
@@ -142,7 +134,7 @@ class ViewController: UIViewController {
 				templateView.layer.borderColor = UIColor.lightGray.cgColor
 				templateView.layer.borderWidth = 2
 				templatesScrollView.addSubview(templateView)
-				x = templateView.frame.maxX+2
+				x = templateView.frame.maxX + 2
 			}
 			
 			print("- \(loadedTemplates.count) templates are now loaded!")
@@ -166,6 +158,8 @@ class ViewController: UIViewController {
             return ShapeView.ShapeType.Triangle
         }
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()

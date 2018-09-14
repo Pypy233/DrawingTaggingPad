@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1234.7826086956522" y="170.38043478260872"/>
         </scene>
-        <!--View Controller-->
+        <!--Stroke Attribute Controller-->
         <scene sceneID="4K3-k9-oAL">
             <objects>
-                <viewController id="sBF-0K-XqM" sceneMemberID="viewController">
+                <viewController id="sBF-0K-XqM" customClass="StrokeAttributeController" customModule="DrawingTaggingPad" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nkd-MI-K51"/>
                         <viewControllerLayoutGuide type="bottom" id="7IJ-qa-MVu"/>
@@ -100,7 +100,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deB-jE-PC9" customClass="ColorPickerView" customModule="DrawingTaggingPad" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deB-jE-PC9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
