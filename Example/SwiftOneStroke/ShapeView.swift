@@ -16,6 +16,7 @@ class ShapeView: UIView {
     }
     
     var currentShapeType: ShapeType = ShapeType.Circle
+    var drawingPoints = [CGPoint()]
     
     var centerPoint = CGPoint()
     var permiterArray = [CGFloat]()

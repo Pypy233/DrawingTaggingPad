@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     func image(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
         if let error = error {
-            // we got back an error!
+            
             let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
@@ -50,12 +50,11 @@ class ViewController: UIViewController {
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		loadTemplatesDirectory()
+        loadTemplatesDirectory()
         LocalNotifManager().setInnerNotification()
         drawView.backgroundColor = UIColor.white
-		// we set a completion handler called on touchesCancelled/End which
-		// grab drawn points and pass them to the one stroke recognizer class
-		drawView.onDidFinishDrawing = { drawnPoints in
+        
+        drawView.onDidFinishDrawing = { drawnPoints in
 			if drawnPoints == nil {
 				return
 			}
@@ -63,7 +62,7 @@ class ViewController: UIViewController {
 			if drawnPoints!.count < self.POINTS_LEAST_NUMBER {
 				return
 			}
-           // print(drawnPoints!)
+          
             
             let strokeRecognizer = SwiftUnistroke(points: drawnPoints!)
          

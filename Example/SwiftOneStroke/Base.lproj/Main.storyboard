@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--DrawingTaggingPad-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrawingTaggingPad" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,37 +28,19 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c60-9c-Ggy" customClass="StrokeView" customModule="DrawingTaggingPad" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="426" height="612"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohk-mc-Rsc">
-                                                <rect key="frame" x="32" y="103" width="48" height="44"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="画笔"/>
-                                                <connections>
-                                                    <segue destination="sBF-0K-XqM" kind="push" id="Kbv-5Z-a0I"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1c-WE-eqL">
-                                                <rect key="frame" x="334" y="108" width="54" height="39"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="保存"/>
-                                                <connections>
-                                                    <action selector="saveToAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VhZ-ci-T1A"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" red="0.81960784310000001" green="0.01176470588" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMk-Aw-sHn" customClass="UIScrollView">
-                                <rect key="frame" x="0.0" y="646" width="414" height="90"/>
+                                <rect key="frame" x="0.0" y="602" width="414" height="90"/>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.2784313725" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="WwG-GQ-jGB"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVAILABLE LOADED TEMPLATES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3x-m8-jsk">
-                                <rect key="frame" x="12" y="620" width="387" height="21"/>
+                                <rect key="frame" x="12" y="576" width="387" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="CYA-Ne-FHl"/>
                                 </constraints>
@@ -77,7 +59,33 @@
                             <constraint firstAttribute="trailingMargin" secondItem="lMk-Aw-sHn" secondAttribute="trailing" constant="-20" id="q1s-WD-sKN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kmP-wp-IdM"/>
+                    <toolbarItems>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="rie-4k-2tb"/>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="nlg-5Q-WX3"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="DrawingTaggingPad" id="kmP-wp-IdM">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="4at-GM-Qif">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ohk-mc-Rsc">
+                                <rect key="frame" x="20" y="0.0" width="48" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="设置"/>
+                                <connections>
+                                    <segue destination="sBF-0K-XqM" kind="push" id="Kbv-5Z-a0I"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="yEH-cO-sJ2">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="u1c-WE-eqL">
+                                <rect key="frame" x="340" y="2" width="54" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="saveToAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VhZ-ci-T1A"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="drawView" destination="c60-9c-Ggy" id="tlG-M0-Bjv"/>
                         <outlet property="labelTemplates" destination="y3x-m8-jsk" id="paA-im-Br3"/>
@@ -88,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="1234.7826086956522" y="170.38043478260872"/>
         </scene>
-        <!--Stroke Attribute Controller-->
+        <!--Stroke Setting-->
         <scene sceneID="4K3-k9-oAL">
             <objects>
                 <viewController id="sBF-0K-XqM" customClass="StrokeAttributeController" customModule="DrawingTaggingPad" customModuleProvider="target" sceneMemberID="viewController">
@@ -108,7 +116,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="QOj-Go-2Pb"/>
+                    <navigationItem key="navigationItem" title="Stroke Setting" id="QOj-Go-2Pb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ChU-KY-PVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

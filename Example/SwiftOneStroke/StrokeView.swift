@@ -41,7 +41,6 @@ open class StrokeView : UIView {
 	open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		self.drawPath = UIBezierPath()
 		self.drawPath.lineWidth = 3.0
-		
 		activePoints.removeAll()
 
 		let point = touches.first!.location(in: self)

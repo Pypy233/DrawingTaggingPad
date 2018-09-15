@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 print("register notification success")
             }
             else {
-                print("register notification fail error.localizedDescription:\(error?.localizedDescription)")
+                print("register notification fail error.localizedDescription:\(String(describing: error?.localizedDescription))")
             }
         }
         

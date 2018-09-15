@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C17EAD02147AA650098204B /* UIBezierPathShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C17EACF2147AA650098204B /* UIBezierPathShape.swift */; };
+		0C65D8AC214D404300B40CF8 /* ShapeGeneratorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65D8AB214D404300B40CF8 /* ShapeGeneratorUtil.swift */; };
 		0CFAD260214B8E7800BD3EE4 /* StrokeAttributeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */; };
-		0CFAD266214B99D900BD3EE4 /* ShapeRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD265214B99D900BD3EE4 /* ShapeRecognizer.swift */; };
 		0CFAD26B214BA72900BD3EE4 /* LocalNotifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */; };
 		0CFAD26E214BA77900BD3EE4 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */; };
 		0CFC345E214561F100378244 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC345D214561F100378244 /* ShapeView.swift */; };
@@ -46,9 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C17EACF2147AA650098204B /* UIBezierPathShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPathShape.swift; sourceTree = "<group>"; };
+		0C65D8AB214D404300B40CF8 /* ShapeGeneratorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeGeneratorUtil.swift; sourceTree = "<group>"; };
 		0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeAttributeController.swift; sourceTree = "<group>"; };
-		0CFAD265214B99D900BD3EE4 /* ShapeRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeRecognizer.swift; sourceTree = "<group>"; };
 		0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotifManager.swift; sourceTree = "<group>"; };
 		0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		0CFC345D214561F100378244 /* ShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
@@ -126,26 +124,13 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		0CFAD264214B99C000BD3EE4 /* ShapeRecognizer */ = {
-			isa = PBXGroup;
-			children = (
-				0CFAD265214B99D900BD3EE4 /* ShapeRecognizer.swift */,
-			);
-			name = ShapeRecognizer;
-			sourceTree = "<group>";
-		};
-		0CFAD269214BA71900BD3EE4 /* Notification */ = {
-			isa = PBXGroup;
-			children = (
-				0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */,
-			);
-			name = Notification;
-			sourceTree = "<group>";
-		};
 		0CFAD26C214BA76C00BD3EE4 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				648EF9FA1BC83E240063243A /* SwiftUnistroke.swift */,
+				0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */,
 				0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */,
+				0C65D8AB214D404300B40CF8 /* ShapeGeneratorUtil.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -176,18 +161,14 @@
 			isa = PBXGroup;
 			children = (
 				0CFAD26C214BA76C00BD3EE4 /* Util */,
-				0CFAD269214BA71900BD3EE4 /* Notification */,
-				0CFAD264214B99C000BD3EE4 /* ShapeRecognizer */,
 				0CFAD25E214B8E5E00BD3EE4 /* Controller */,
 				0C4CF6E42148A0C100201FA5 /* Shape */,
-				648EF9FC1BC83E3C0063243A /* SwiftUnistroke Library */,
 				64341C931BBED5510031D7C9 /* AppDelegate.swift */,
 				64341C9C1BBED5510031D7C9 /* LaunchScreen.storyboard */,
 				64341C971BBED5510031D7C9 /* Main.storyboard */,
 				6495EEF31BC1539100B57B99 /* Templates */,
 				64341C9A1BBED5510031D7C9 /* Assets.xcassets */,
 				64341C9F1BBED5510031D7C9 /* Info.plist */,
-				0C17EACF2147AA650098204B /* UIBezierPathShape.swift */,
 			);
 			name = DrawingTaggingPad;
 			path = SwiftOneStroke;
@@ -211,14 +192,6 @@
 			);
 			name = DrawingTaggingPadUITests;
 			path = SwiftOneStrokeUITests;
-			sourceTree = "<group>";
-		};
-		648EF9FC1BC83E3C0063243A /* SwiftUnistroke Library */ = {
-			isa = PBXGroup;
-			children = (
-				648EF9FA1BC83E240063243A /* SwiftUnistroke.swift */,
-			);
-			name = "SwiftUnistroke Library";
 			sourceTree = "<group>";
 		};
 		6CD1A429CAC8B54B98544423 /* Pods */ = {
@@ -315,6 +288,7 @@
 				TargetAttributes = {
 					64341C8F1BBED5510031D7C9 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 2J6GNK4Q93;
 						LastSwiftMigration = 0830;
 					};
 					64341CA31BBED5510031D7C9 = {
@@ -460,13 +434,12 @@
 				0CFC345E214561F100378244 /* ShapeView.swift in Sources */,
 				0CFAD26E214BA77900BD3EE4 /* DateUtil.swift in Sources */,
 				648EF9FB1BC83E240063243A /* SwiftUnistroke.swift in Sources */,
-				0CFAD266214B99D900BD3EE4 /* ShapeRecognizer.swift in Sources */,
 				64341C961BBED5510031D7C9 /* ViewController.swift in Sources */,
 				0CFAD260214B8E7800BD3EE4 /* StrokeAttributeController.swift in Sources */,
 				6495EEF71BC15DED00B57B99 /* StrokeView.swift in Sources */,
 				64341C941BBED5510031D7C9 /* AppDelegate.swift in Sources */,
 				0CFAD26B214BA72900BD3EE4 /* LocalNotifManager.swift in Sources */,
-				0C17EAD02147AA650098204B /* UIBezierPathShape.swift in Sources */,
+				0C65D8AC214D404300B40CF8 /* ShapeGeneratorUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +587,7 @@
 			baseConfigurationReference = B4493F9C7C7BC39081F3C173 /* Pods-DrawingTaggingPad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2J6GNK4Q93;
 				INFOPLIST_FILE = SwiftOneStroke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -628,6 +602,7 @@
 			baseConfigurationReference = 4B45DBA5684245E373F69B96 /* Pods-DrawingTaggingPad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2J6GNK4Q93;
 				INFOPLIST_FILE = SwiftOneStroke/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
