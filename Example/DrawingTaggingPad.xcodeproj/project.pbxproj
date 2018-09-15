@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C65D8AC214D404300B40CF8 /* ShapeGeneratorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65D8AB214D404300B40CF8 /* ShapeGeneratorUtil.swift */; };
+		0C65D8AC214D404300B40CF8 /* ShapeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65D8AB214D404300B40CF8 /* ShapeGenerator.swift */; };
+		0C65D8B2214D591100B40CF8 /* CGStrokeConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65D8B1214D591100B40CF8 /* CGStrokeConvertor.swift */; };
 		0CFAD260214B8E7800BD3EE4 /* StrokeAttributeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */; };
 		0CFAD26B214BA72900BD3EE4 /* LocalNotifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */; };
 		0CFAD26E214BA77900BD3EE4 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */; };
@@ -45,7 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C65D8AB214D404300B40CF8 /* ShapeGeneratorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeGeneratorUtil.swift; sourceTree = "<group>"; };
+		0C65D8AB214D404300B40CF8 /* ShapeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeGenerator.swift; sourceTree = "<group>"; };
+		0C65D8B1214D591100B40CF8 /* CGStrokeConvertor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGStrokeConvertor.swift; sourceTree = "<group>"; };
 		0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeAttributeController.swift; sourceTree = "<group>"; };
 		0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotifManager.swift; sourceTree = "<group>"; };
 		0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
@@ -130,7 +132,8 @@
 				648EF9FA1BC83E240063243A /* SwiftUnistroke.swift */,
 				0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */,
 				0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */,
-				0C65D8AB214D404300B40CF8 /* ShapeGeneratorUtil.swift */,
+				0C65D8AB214D404300B40CF8 /* ShapeGenerator.swift */,
+				0C65D8B1214D591100B40CF8 /* CGStrokeConvertor.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -433,13 +436,14 @@
 			files = (
 				0CFC345E214561F100378244 /* ShapeView.swift in Sources */,
 				0CFAD26E214BA77900BD3EE4 /* DateUtil.swift in Sources */,
+				0C65D8B2214D591100B40CF8 /* CGStrokeConvertor.swift in Sources */,
 				648EF9FB1BC83E240063243A /* SwiftUnistroke.swift in Sources */,
 				64341C961BBED5510031D7C9 /* ViewController.swift in Sources */,
 				0CFAD260214B8E7800BD3EE4 /* StrokeAttributeController.swift in Sources */,
 				6495EEF71BC15DED00B57B99 /* StrokeView.swift in Sources */,
 				64341C941BBED5510031D7C9 /* AppDelegate.swift in Sources */,
 				0CFAD26B214BA72900BD3EE4 /* LocalNotifManager.swift in Sources */,
-				0C65D8AC214D404300B40CF8 /* ShapeGeneratorUtil.swift in Sources */,
+				0C65D8AC214D404300B40CF8 /* ShapeGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
