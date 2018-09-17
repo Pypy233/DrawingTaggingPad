@@ -18,6 +18,16 @@ class ViewController: UIViewController {
     
 	let POINTS_LEAST_NUMBER = 5  // 绘图板上一划点集的最小数
     
+    // 清除所有自动生成的图形
+    @IBAction func clearScreen(_ sender: UIButton) {
+        for view in self.view.subviews {
+            if view is ShapeView {
+                view.removeFromSuperview()
+            }
+        }
+    }
+    
+    
     @IBAction func saveToAlbum(_ sender: UIButton) {
         if #available(iOS 10.0, *) {
             let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
@@ -76,8 +86,13 @@ class ViewController: UIViewController {
 					title = "Gesture Recognized!"
 					message = "Let me try...is it a \(template!.name.uppercased())?"
 					print("[FOUND] Template found is \(template!.name) with distance: \(distance!)")
-                    let myView = ShapeView(frame: CGRect(x: 25, y: 200, width: 280, height: 250), shape: self.transferTemplateNameStringToShapeType(templateName: template!.name))
-                    myView.backgroundColor = UIColor.yellow
+                    
+                    let strokePoints = CGStrokeConvertor.strokePointsListToCGPointsList(strokePointList: drawnPoints!)
+                    print("")
+                    print(self.transferTemplateNameStringToShapeType(templateName: template!.name))
+                    let myView = ShapeView(frame: CGRect(x: 25, y: 200, width: 280, height: 250), shape: self.transferTemplateNameStringToShapeType(templateName: template!.name), drawingPoints: strokePoints)
+                    
+                    myView.backgroundColor = UIColor.gray
                     self.view.addSubview(myView)
 				} else {
 					print("[FAILED] Template not found")
@@ -149,9 +164,9 @@ class ViewController: UIViewController {
     
     func transferTemplateNameStringToShapeType(templateName: String) -> ShapeView.ShapeType{
         switch templateName {
-        case "circle":
+        case "Circle":
             return ShapeView.ShapeType.Circle
-        case "rectangle":
+        case "Rectangle":
             return ShapeView.ShapeType.Rectangle
         default:
             return ShapeView.ShapeType.Triangle

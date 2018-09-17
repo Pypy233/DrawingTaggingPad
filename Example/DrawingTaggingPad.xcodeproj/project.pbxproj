@@ -116,6 +116,14 @@
 			name = Shape;
 			sourceTree = "<group>";
 		};
+		0C528C52214F3610000DE653 /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				0C65D8AB214D404300B40CF8 /* ShapeGenerator.swift */,
+			);
+			name = Generator;
+			sourceTree = "<group>";
+		};
 		0CFAD25E214B8E5E00BD3EE4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +140,6 @@
 				648EF9FA1BC83E240063243A /* SwiftUnistroke.swift */,
 				0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */,
 				0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */,
-				0C65D8AB214D404300B40CF8 /* ShapeGenerator.swift */,
 				0C65D8B1214D591100B40CF8 /* CGStrokeConvertor.swift */,
 			);
 			name = Util;
@@ -163,6 +170,7 @@
 		64341C921BBED5510031D7C9 /* DrawingTaggingPad */ = {
 			isa = PBXGroup;
 			children = (
+				0C528C52214F3610000DE653 /* Generator */,
 				0CFAD26C214BA76C00BD3EE4 /* Util */,
 				0CFAD25E214B8E5E00BD3EE4 /* Controller */,
 				0C4CF6E42148A0C100201FA5 /* Shape */,
@@ -301,6 +309,7 @@
 					};
 					64341CAE1BBED5510031D7C9 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 2J6GNK4Q93;
 						LastSwiftMigration = 0830;
 						TestTargetID = 64341C8F1BBED5510031D7C9;
 					};
@@ -650,6 +659,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56356B95BE2AFC9EEC9EB55C /* Pods-DrawingTaggingPadUITests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2J6GNK4Q93;
 				INFOPLIST_FILE = SwiftOneStrokeUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -665,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CF674FD5F08695CC3EF9E375 /* Pods-DrawingTaggingPadUITests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2J6GNK4Q93;
 				INFOPLIST_FILE = SwiftOneStrokeUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

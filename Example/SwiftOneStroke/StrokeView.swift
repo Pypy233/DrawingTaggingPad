@@ -78,4 +78,6 @@ open class StrokeView : UIView {
 		ctx?.addPath(self.drawPath.cgPath)
 		ctx?.strokePath()
 	}
+    
+    
 }

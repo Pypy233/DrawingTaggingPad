@@ -28,6 +28,16 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c60-9c-Ggy" customClass="StrokeView" customModule="DrawingTaggingPad" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="426" height="612"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oke-Gt-NGd">
+                                                <rect key="frame" x="30" y="72" width="31" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="清屏"/>
+                                                <connections>
+                                                    <action selector="clearScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oVR-5m-HUV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.81960784310000001" green="0.01176470588" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>

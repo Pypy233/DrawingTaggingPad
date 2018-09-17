@@ -9,49 +9,52 @@
 import UIKit
 
 class ShapeGenerator {
-    var drawingPoints = [StrokePoint]()
+   // var drawingPoints = [StrokePoint]()
     
-    func getShapeCenter() -> StrokePoint {
-        var strokeBounds = getStrokeBounds()
+    func getShapeCenter(drawingPoints: [StrokePoint]) -> StrokePoint {
+        var strokeBounds = getStrokeBounds(drawingPoints: drawingPoints)
         let x = (strokeBounds[0].x + strokeBounds[1].x) / 2
         let y = (strokeBounds[2].y + strokeBounds[3].y) / 2
-        print("x: \(x) y: \(y)")
+        print("Center****** x: \(x) y: \(y)")
         return StrokePoint(x: x, y: y)
     }
     
-    func getPermiter(shapeType: ShapeView.ShapeType) -> [Double] {
-        let xLeastPoint = getStrokeBounds()[0]
-        let xMostPoint  = getStrokeBounds()[1]
-        let yLestPoint  = getStrokeBounds()[2]
-        let yMostPoint  = getStrokeBounds()[3]
+    func getPermiter(shapeType: ShapeView.ShapeType, drawingPoints: [StrokePoint]) -> [CGFloat] {
+        let xLeastPoint = getStrokeBounds(drawingPoints: drawingPoints)[0]
+        let xMostPoint  = getStrokeBounds(drawingPoints: drawingPoints)[1]
+        let yLestPoint  = getStrokeBounds(drawingPoints: drawingPoints)[2]
+        let yMostPoint  = getStrokeBounds(drawingPoints: drawingPoints)[3]
         
-        var permiterArray = [Double]()
+        var permiterArray = [CGFloat]()
         
         switch shapeType {
         case .Circle:
-            permiterArray.append(getAveragePermiter(point1: xLeastPoint, point2: xMostPoint, point3: yLestPoint, point4: yMostPoint))
+            let radius = CGFloat(getAveragePermiter(point1: xLeastPoint, point2: xMostPoint, point3: yLestPoint, point4: yMostPoint))
+            permiterArray.append(radius)
             return permiterArray
             
         case .Rectangle:
-            let width =  getAveragePermiter(point1: yLestPoint, point2: xMostPoint, point3: xLeastPoint, point4: yMostPoint)
-            let height = getAveragePermiter(point1: xLeastPoint, point2: yLestPoint, point3: xMostPoint, point4: yMostPoint)
+            let width =  CGFloat(getAveragePermiter(point1: yLestPoint, point2: xMostPoint, point3: xLeastPoint, point4: yMostPoint))
+            let height = CGFloat(getAveragePermiter(point1: xLeastPoint, point2: yLestPoint, point3: xMostPoint, point4: yMostPoint))
             permiterArray.append(width)
             permiterArray.append(height)
             return permiterArray
             
         case .Triangle:
-            permiterArray.append(xLeastPoint.distanceTo(xMostPoint))
-            permiterArray.append(yLestPoint.distanceTo(yMostPoint))
-            permiterArray.append(getAveragePermiter(point1: yMostPoint, point2: xLeastPoint, point3: yMostPoint, point4: xMostPoint))
+            permiterArray.append(CGFloat(xLeastPoint.distanceTo(xMostPoint)))
+            permiterArray.append(CGFloat(yLestPoint.distanceTo(yMostPoint)))
+            permiterArray.append(CGFloat(getAveragePermiter(point1: yMostPoint, point2: xLeastPoint, point3: yMostPoint, point4: xMostPoint)))
             return permiterArray
             
         default:
             let width =  getAveragePermiter(point1: yLestPoint, point2: xMostPoint, point3: xLeastPoint, point4: yMostPoint)
             let height = getAveragePermiter(point1: xLeastPoint, point2: yLestPoint, point3: xMostPoint, point4: yMostPoint)
-            permiterArray.append((width + height) / 2)
+            permiterArray.append(CGFloat((width + height) / 2))
             return permiterArray
         }
     }
+    
+    
     
     
     /** 
@@ -65,14 +68,15 @@ class ShapeGenerator {
     /**
      计算初始点到结束点的距离
      **/
-    func getDistanceBetweenStartAndEnd() -> Double {
+    func getDistanceBetweenStartAndEnd(drawingPoints: [StrokePoint]) -> Double {
         assert(drawingPoints.count > 2)
         return drawingPoints[0].distanceTo(drawingPoints.last!)
     }
     
     
-    func getStrokeBounds() -> [StrokePoint] {
-        let beginPoint = self.drawingPoints[0]
+    func getStrokeBounds(drawingPoints: [StrokePoint]) -> [StrokePoint] {
+     //   print("*****\(drawingPoints)")
+        let beginPoint = drawingPoints[0]
         
         var xMostPoint  = beginPoint
         var xLeastPoint = beginPoint
@@ -80,7 +84,7 @@ class ShapeGenerator {
         var yLeastPoint = beginPoint // 寻找四个近似切点的位置
         
         
-        for point in self.drawingPoints{
+        for point in drawingPoints{
             if point.x < xLeastPoint.x{
                 xLeastPoint = point
             }
