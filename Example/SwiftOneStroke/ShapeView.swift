@@ -77,7 +77,7 @@ class ShapeView: UIView {
         
         //4
         ctx.addRect(CGRect(x: self.centerPoint.x - (0.5 * rectangleWidth), y: self.centerPoint.y - (0.5 * rectangleHeight), width: rectangleWidth, height: rectangleHeight))
-        ctx.setLineWidth(10)
+        ctx.setLineWidth(5)
         ctx.setStrokeColor(UIColor.gray.cgColor)
         ctx.strokePath()
         

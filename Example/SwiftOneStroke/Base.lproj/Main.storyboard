@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="426" height="612"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oke-Gt-NGd">
-                                                <rect key="frame" x="30" y="72" width="31" height="30"/>
+                                                <rect key="frame" x="25" y="67" width="31" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="清屏"/>
                                                 <connections>
@@ -106,7 +106,7 @@
             </objects>
             <point key="canvasLocation" x="1234.7826086956522" y="170.38043478260872"/>
         </scene>
-        <!--Stroke Setting-->
+        <!--Stroke Attribute Controller-->
         <scene sceneID="4K3-k9-oAL">
             <objects>
                 <viewController id="sBF-0K-XqM" customClass="StrokeAttributeController" customModule="DrawingTaggingPad" customModuleProvider="target" sceneMemberID="viewController">
@@ -121,12 +121,42 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="deB-jE-PC9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="线宽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDC-OQ-S3K">
+                                        <rect key="frame" x="176" y="67" width="71" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="颜色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hk5-U7-0rz">
+                                        <rect key="frame" x="178" y="353" width="59" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGx-jw-9na">
+                                        <rect key="frame" x="0.0" y="121" width="414" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </pickerView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Stroke Setting" id="QOj-Go-2Pb"/>
+                    <navigationItem key="navigationItem" id="QOj-Go-2Pb">
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="fww-SF-lHG">
+                            <connections>
+                                <action selector="saveChange:" destination="sBF-0K-XqM" id="KF7-pp-sGg"/>
+                                <segue destination="BYZ-38-t0r" kind="push" id="Vz2-NU-1Ul"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="widthPicker" destination="PGx-jw-9na" id="b0k-ul-RNw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ChU-KY-PVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,4 +181,7 @@
             <point key="canvasLocation" x="327.536231884058" y="170.38043478260872"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vz2-NU-1Ul"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -14,8 +14,9 @@ class ShapeGenerator {
     func getShapeCenter(drawingPoints: [StrokePoint], shapeType: ShapeView.ShapeType) -> StrokePoint {
         let RECTANGLE_X_ACCUARCY_LENGTH = 50.0
         let RECTANGLE_Y_ACCUARCY_LENGTH = 180.0 // 调整图形位置精度的补足长
-        let DEFAULT_X_ACCUARCY_LENGTH = 40.0
-        let DEFAULT_Y_ACCUARCY_LENGTH = 180.0
+        let CIRCLE_X_ACCUARCY_LENGTH = 40.0
+        let CIRCLE_Y_ACCUARCY_LENGTH = 180.0
+        
         
         var strokeBounds = getStrokeBounds(drawingPoints: drawingPoints)
         var x = (strokeBounds[0].x + strokeBounds[1].x) / 2
@@ -24,11 +25,11 @@ class ShapeGenerator {
         if shapeType == ShapeView.ShapeType.Rectangle{
             x -= RECTANGLE_X_ACCUARCY_LENGTH
             y -= RECTANGLE_Y_ACCUARCY_LENGTH
-        }else{
-            x -= DEFAULT_X_ACCUARCY_LENGTH
-            y -= DEFAULT_Y_ACCUARCY_LENGTH
+        }else if shapeType == ShapeView.ShapeType.Circle {
+            x -= CIRCLE_X_ACCUARCY_LENGTH
+            y -= CIRCLE_Y_ACCUARCY_LENGTH
         }
-     //   print("Center****** x: \(x) y: \(y)")
+
         return StrokePoint(x: x, y: y)
     }
     
@@ -116,8 +117,6 @@ class ShapeGenerator {
     }
     
     func getTrianglePoints (drawingPoints: [StrokePoint]) -> [StrokePoint] {
-        let LENGTH_RANGE = 5.0 // 允许的边际误差
-        
         let xLeastPoint = getStrokeBounds(drawingPoints: drawingPoints)[0]
         let xMostPoint  = getStrokeBounds(drawingPoints: drawingPoints)[1]
         let yLestPoint  = getStrokeBounds(drawingPoints: drawingPoints)[2]
@@ -127,25 +126,41 @@ class ShapeGenerator {
         var secondPoint: StrokePoint
         var lastPoint:   StrokePoint
         
-        if abs(startPoint.x - xLeastPoint.x) <= LENGTH_RANGE {
-            secondPoint = xMostPoint
-        }else{
-            secondPoint = xLeastPoint
-        }
         
-        if abs(startPoint.y - yLestPoint.y) > abs(startPoint.y - yMostPoint.y){
-            lastPoint = yLestPoint
-        }else{
-            lastPoint = yMostPoint
-        }
+        secondPoint = formatStrokePoint(strokePoint: StrokePoint(x: (xMostPoint.x + xLeastPoint.x) / 2, y: (yLestPoint.y + yMostPoint.y) / 2))
+       
+        lastPoint = formatStrokePoint(strokePoint: drawingPoints[drawingPoints.count - 1])
         
         return [startPoint, secondPoint, lastPoint]
         
     }
     
     func judgeSquare(drawingPoints: [StrokePoint]) -> Bool {
-        var judgement = true
+        let judgement = true
         return judgement
+    }
+    
+    func formatStrokePoint(strokePoint: StrokePoint) -> StrokePoint {
+        let TRIANGLE_Y_ACCUARCY_LENGTH = 200.0
+        return StrokePoint(x: strokePoint.x, y: strokePoint.y - TRIANGLE_Y_ACCUARCY_LENGTH)
+    
+    }
+    
+    func getMaxPermiter(shapeType: ShapeView.ShapeType, drawingPoints: [StrokePoint]) -> Double {
+        let xLeastPoint = getStrokeBounds(drawingPoints: drawingPoints)[0]
+        let xMostPoint  = getStrokeBounds(drawingPoints: drawingPoints)[1]
+        let yLestPoint  = getStrokeBounds(drawingPoints: drawingPoints)[2]
+        let yMostPoint  = getStrokeBounds(drawingPoints: drawingPoints)[3]
+    
+        let distance1 = xLeastPoint.distanceTo(xMostPoint)
+        let distance2 = xLeastPoint.distanceTo(yLestPoint)
+        let distance3 = xLeastPoint.distanceTo(yMostPoint)
+        let distance4 = xMostPoint.distanceTo(yLestPoint)
+        let distance5 = xMostPoint.distanceTo(yMostPoint)
+        let distance6 = yLestPoint.distanceTo(yMostPoint)
+        
+        let maxRange = max(distance1, distance2, distance3, distance4, distance5, distance6)
+        return maxRange
     }
         
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C65D8AC214D404300B40CF8 /* ShapeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65D8AB214D404300B40CF8 /* ShapeGenerator.swift */; };
 		0C65D8B2214D591100B40CF8 /* CGStrokeConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65D8B1214D591100B40CF8 /* CGStrokeConvertor.swift */; };
+		0C68CB2C21509DDA000F15CB /* AccuracyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C68CB2B21509DDA000F15CB /* AccuracyData.swift */; };
 		0CFAD260214B8E7800BD3EE4 /* StrokeAttributeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */; };
 		0CFAD26B214BA72900BD3EE4 /* LocalNotifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */; };
 		0CFAD26E214BA77900BD3EE4 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		0C65D8AB214D404300B40CF8 /* ShapeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeGenerator.swift; sourceTree = "<group>"; };
 		0C65D8B1214D591100B40CF8 /* CGStrokeConvertor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGStrokeConvertor.swift; sourceTree = "<group>"; };
+		0C68CB2B21509DDA000F15CB /* AccuracyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccuracyData.swift; sourceTree = "<group>"; };
 		0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeAttributeController.swift; sourceTree = "<group>"; };
 		0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotifManager.swift; sourceTree = "<group>"; };
 		0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 			name = Generator;
 			sourceTree = "<group>";
 		};
+		0C68CB2A21509DB0000F15CB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0C68CB2B21509DDA000F15CB /* AccuracyData.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		0CFAD25E214B8E5E00BD3EE4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +180,7 @@
 		64341C921BBED5510031D7C9 /* DrawingTaggingPad */ = {
 			isa = PBXGroup;
 			children = (
+				0C68CB2A21509DB0000F15CB /* Data */,
 				0C528C52214F3610000DE653 /* Generator */,
 				0CFAD26C214BA76C00BD3EE4 /* Util */,
 				0CFAD25E214B8E5E00BD3EE4 /* Controller */,
@@ -452,6 +463,7 @@
 				6495EEF71BC15DED00B57B99 /* StrokeView.swift in Sources */,
 				64341C941BBED5510031D7C9 /* AppDelegate.swift in Sources */,
 				0CFAD26B214BA72900BD3EE4 /* LocalNotifManager.swift in Sources */,
+				0C68CB2C21509DDA000F15CB /* AccuracyData.swift in Sources */,
 				0C65D8AC214D404300B40CF8 /* ShapeGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

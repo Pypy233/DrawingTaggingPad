@@ -15,8 +15,9 @@ open class StrokeView : UIView {
 	var drawPath: UIBezierPath
 	var onDidFinishDrawing: StrokeViewEndBlock?
 	var activePoints = [StrokePoint]()
+    var strokeColor =  UIColor.black
 	
-	override init(frame: CGRect) {
+    override init(frame: CGRect) {
 		drawPath = UIBezierPath()
 		super.init(frame: frame)
 		self.backgroundColor = UIColor.lightGray
@@ -42,7 +43,6 @@ open class StrokeView : UIView {
 		self.drawPath = UIBezierPath()
 		self.drawPath.lineWidth = 3.0
 		activePoints.removeAll()
-
 		let point = touches.first!.location(in: self)
 		self.drawPath.move(to: point)
 		activePoints.append(StrokePoint(point: point))
@@ -75,9 +75,18 @@ open class StrokeView : UIView {
 	open override func draw(_ rect: CGRect) {
 		let ctx = UIGraphicsGetCurrentContext()
 		ctx?.setLineWidth(3.0)
-		ctx?.addPath(self.drawPath.cgPath)
+        //
+     //   let color = UIColor(rgb: 0xFF6800)
+       // color.setStroke()
+        strokeColor.setStroke()
+        ctx?.addPath(self.drawPath.cgPath)
 		ctx?.strokePath()
 	}
     
+    open func setStrokeColor(color: UIColor) {
+        color.setStroke()
+    }
+    
     
 }
+

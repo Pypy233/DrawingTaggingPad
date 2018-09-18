@@ -16,6 +16,8 @@ class ViewController: UIViewController {
 	@IBOutlet var templatesScrollView	:UIScrollView!
 	@IBOutlet var labelTemplates		:UILabel!
     
+    var colorIntegerArray = [0, 0, 0]
+    
 	let POINTS_LEAST_NUMBER = 5  // 绘图板上一划点集的最小数
     
     // 清除所有自动生成的图形
@@ -62,6 +64,10 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
         loadTemplatesDirectory()
         LocalNotifManager().setInnerNotification()
+        print(colorIntegerArray)
+        let color = UIColor(red: CGFloat(Double(colorIntegerArray[0]) / 255.0), green: CGFloat(Double(colorIntegerArray[1]) / 255.0), blue: CGFloat(Double(colorIntegerArray[2]) / 255.0), alpha: 0.5)
+        
+        drawView.strokeColor = color
         drawView.backgroundColor = UIColor.white
         
         drawView.onDidFinishDrawing = { drawnPoints in
@@ -92,8 +98,12 @@ class ViewController: UIViewController {
                     let shapeType = self.transferTemplateNameStringToShapeType(templateName: template!.name)
                     print(shapeType)
                     
-            
-                    let myView = ShapeView(frame: CGRect(x: 25, y: 200, width: 280, height: 250), shape: shapeType, drawingPoints: strokePoints)
+                    let center = ShapeGenerator().getShapeCenter(drawingPoints: drawnPoints!, shapeType: shapeType)
+                   
+                    let maxRange = ShapeGenerator().getMaxPermiter(shapeType: shapeType, drawingPoints: drawnPoints!) * 2
+                    
+                    print("x: \(center.x)  y: \(center.y)  maxRange: \(maxRange)")
+                    let myView = ShapeView(frame: CGRect(x: 25, y: 200, width: maxRange, height: maxRange), shape: shapeType, drawingPoints: strokePoints)
                     
                     myView.backgroundColor = UIColor.gray
                     self.view.addSubview(myView)
@@ -159,8 +169,6 @@ class ViewController: UIViewController {
 			
 			// setup scroll view size
 			templatesScrollView.contentSize = CGSize(width: x+CGFloat(2*loadedTemplates.count), height: size)
-            print("*******")
-            print(size)
 			templatesScrollView.backgroundColor = UIColor.white
 			labelTemplates.text = "\(loadedTemplates.count) TEMPLATES LOADED:"
 		} catch (let error as NSError) {
@@ -179,6 +187,7 @@ class ViewController: UIViewController {
         }
     }
     
+   
     override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
