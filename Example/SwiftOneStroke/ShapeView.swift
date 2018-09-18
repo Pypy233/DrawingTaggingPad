@@ -32,11 +32,9 @@ class ShapeView: UIView {
         self.drawingPoints = drawingPoints
         //print(self.drawingPoints)
         let strokeDrawingPoints = CGStrokeConvertor.cgPointsListToStrokePointsList(cgPointList: drawingPoints)
-        print(strokeDrawingPoints)
-        let bounds = ShapeGenerator().getStrokeBounds(drawingPoints: strokeDrawingPoints)
-        print(bounds)
-        let strokePoint = ShapeGenerator().getShapeCenter(drawingPoints: strokeDrawingPoints)
+        let strokePoint = ShapeGenerator().getShapeCenter(drawingPoints: strokeDrawingPoints, shapeType: shape)
         self.centerPoint = CGStrokeConvertor.strokePointToCGPoint(strokePoint: strokePoint)
+        print("*************")
         print(self.centerPoint)
         self.permiterArray = ShapeGenerator().getPermiter(shapeType: self.currentShapeType, drawingPoints: CGStrokeConvertor.cgPointsListToStrokePointsList(cgPointList: drawingPoints))
     }
@@ -53,7 +51,9 @@ class ShapeView: UIView {
     override func draw(_ rect: CGRect) {
         switch self.currentShapeType {
             case ShapeType.Rectangle: drawRectangle(isSquare: false)
-            case ShapeType.Triangle: drawTriangle()
+            
+            case ShapeType.Triangle: drawTriangle(strokePointList: ShapeGenerator().getTrianglePoints(drawingPoints: CGStrokeConvertor.cgPointsListToStrokePointsList(cgPointList: drawingPoints)))
+            
             case ShapeType.Circle: drawCircle()
             case ShapeType.Square: drawRectangle(isSquare: true)
         }
@@ -94,9 +94,9 @@ class ShapeView: UIView {
         ctx.beginPath()
         
         //6
-        ctx.setLineWidth(5)
+        ctx.setLineWidth(3)
         
-        let radius: CGFloat = permiterArray[0]
+        let radius: CGFloat = permiterArray[0] / 2
         let endAngle: CGFloat = CGFloat(2 * Double.pi)
         
         ctx.addArc(center: self.centerPoint, radius: radius, startAngle: 0, endAngle: endAngle, clockwise: true)
@@ -104,10 +104,15 @@ class ShapeView: UIView {
         ctx.strokePath()
     }
     
-    func drawTriangle() {
-       // guard let ctx = UIGraphicsGetCurrentContext() else { return }
-        
-        
+    func drawTriangle(strokePointList: [StrokePoint]){
+        let cgPointList = CGStrokeConvertor.strokePointsListToCGPointsList(strokePointList: strokePointList)
+        let startPoint = cgPointList[0]
+        let secondPoint = cgPointList[1]
+        let lastPoint = cgPointList[2]
+        guard let ctx = UIGraphicsGetCurrentContext() else { return }
+        ctx.move(to: startPoint)
+        ctx.addLine(to: secondPoint)
+        ctx.addLine(to: lastPoint)
+        ctx.fillPath()
     }
-    
 }

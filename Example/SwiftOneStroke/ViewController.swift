@@ -89,8 +89,11 @@ class ViewController: UIViewController {
                     
                     let strokePoints = CGStrokeConvertor.strokePointsListToCGPointsList(strokePointList: drawnPoints!)
                     print("")
-                    print(self.transferTemplateNameStringToShapeType(templateName: template!.name))
-                    let myView = ShapeView(frame: CGRect(x: 25, y: 200, width: 280, height: 250), shape: self.transferTemplateNameStringToShapeType(templateName: template!.name), drawingPoints: strokePoints)
+                    let shapeType = self.transferTemplateNameStringToShapeType(templateName: template!.name)
+                    print(shapeType)
+                    
+            
+                    let myView = ShapeView(frame: CGRect(x: 25, y: 200, width: 280, height: 250), shape: shapeType, drawingPoints: strokePoints)
                     
                     myView.backgroundColor = UIColor.gray
                     self.view.addSubview(myView)
@@ -142,6 +145,7 @@ class ViewController: UIViewController {
 				print("  - Loaded template '\(templateName)' with \(templateObj.points.count) points inside")
 				
 				// For each template get its preview and show them inside the bottom screen scroll view
+                
 				let templateView = UIImageView(frame: CGRect(x: x,y: 0,width: size,height: size))
 				templateView.image = UIImage(named: templateImage)
 				templateView.contentMode = UIViewContentMode.scaleAspectFit
@@ -155,6 +159,8 @@ class ViewController: UIViewController {
 			
 			// setup scroll view size
 			templatesScrollView.contentSize = CGSize(width: x+CGFloat(2*loadedTemplates.count), height: size)
+            print("*******")
+            print(size)
 			templatesScrollView.backgroundColor = UIColor.white
 			labelTemplates.text = "\(loadedTemplates.count) TEMPLATES LOADED:"
 		} catch (let error as NSError) {
@@ -173,12 +179,9 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    
     override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
-
-
+    
 }
 
