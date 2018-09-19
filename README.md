@@ -1,2 +1,24 @@
 # DrawingTaggingPad
+![](https://camo.githubusercontent.com/e7e62a41071cdcef938af9e7b059801ab67011fc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f53776966742d342d79656c6c6f772e737667)    ![](https://camo.githubusercontent.com/7009aaf0ecf41bc9449318d73bca7974a40c1fd7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f706c6174666f726d2d694f532d6c69676874677261792e737667) ![](https://camo.githubusercontent.com/890acbdcb87868b382af9a4b1fac507b9659d9bf/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e737667)  ![](https://camo.githubusercontent.com/bfba53c1ad0d54ab79c3aa086bc04d2da5611121/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f436f636f61506f64732d312e372d677265656e2e737667)
+
+
 App for my course Software Construction
+
+## Pad
+![](img/1.png)
+
+## Draw
+![](img/2.png)
+
+
+## Detect
+![](img/3.png)
+
+## Generate
+![](img/4.png)
+
+## Set
+![](img/5.png)
+
+## Save
+![](img/6.png)

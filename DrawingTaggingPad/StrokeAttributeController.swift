@@ -83,7 +83,7 @@ class StrokeAttributeController: UIViewController, UIPickerViewDelegate, UIPicke
         if segue.destination is ViewController{
             let vc = segue.destination as? ViewController
             vc?.colorIntegerArray = getCurrentColor()
-            var selectedValue = pickerData[widthPicker.selectedRow(inComponent: 0)]
+            let selectedValue = pickerData[widthPicker.selectedRow(inComponent: 0)]
             print("val: \(selectedValue)")
             vc?.strokeWidth = strokeWidthConvertor(strokeDescription: selectedValue)
         }
