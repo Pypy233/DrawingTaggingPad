@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import ChromaColorPicker
 
-class StrokeAttributeController: UIViewController{
+class StrokeAttributeController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
     @IBOutlet weak var colorDisplayView: UIView!
     var colorPicker: ChromaColorPicker!
@@ -18,16 +18,18 @@ class StrokeAttributeController: UIViewController{
     var viewController: ViewController?
     
     @IBAction func saveChange(_ sender: UIBarButtonItem) {
-   
+        
     }
     
     @IBOutlet var widthPicker: UIPickerView!
     
     
-    let pickerData = [1, 2, 3, 4, 5, 6, 7, 8]
+    let pickerData = ["极细", "细", "普通", "较粗", "粗", "极粗"]
     
     
     override func viewDidLoad() {
+        widthPicker.dataSource = self
+        widthPicker.delegate = self
         
         let pickerSize = CGSize(width: view.bounds.width*0.8, height: view.bounds.width*0.8)
         let pickerOrigin = CGPoint(x: view.bounds.midX - pickerSize.width/2, y: view.bounds.midY)
@@ -64,10 +66,45 @@ class StrokeAttributeController: UIViewController{
         return [redInt!, greenInt!, blueInt!]
     }
     
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.destination is ViewController{
             let vc = segue.destination as? ViewController
             vc?.colorIntegerArray = getCurrentColor()
+            var selectedValue = pickerData[widthPicker.selectedRow(inComponent: 0)]
+            print("val: \(selectedValue)")
+            vc?.strokeWidth = strokeWidthConvertor(strokeDescription: selectedValue)
+        }
+    }
+    
+    func strokeWidthConvertor(strokeDescription: String) -> Int {
+        switch strokeDescription {
+        case "极细":
+            return 2
+        case "细":
+            return 3
+        case "普通":
+            return 4
+        case "较粗":
+            return 5
+        case "粗":
+            return 6
+        case "极粗":
+            return 7
+        default:
+            return 4
         }
     }
     
@@ -114,4 +151,3 @@ extension String {
         return substring(with: startIndex..<endIndex)
     }
 }
-

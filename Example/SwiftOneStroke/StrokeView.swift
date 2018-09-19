@@ -16,6 +16,7 @@ open class StrokeView : UIView {
 	var onDidFinishDrawing: StrokeViewEndBlock?
 	var activePoints = [StrokePoint]()
     var strokeColor =  UIColor.black
+    var strokeWidth = 3
 	
     override init(frame: CGRect) {
 		drawPath = UIBezierPath()
@@ -74,7 +75,7 @@ open class StrokeView : UIView {
 
 	open override func draw(_ rect: CGRect) {
 		let ctx = UIGraphicsGetCurrentContext()
-		ctx?.setLineWidth(3.0)
+		ctx?.setLineWidth(CGFloat(self.strokeWidth))
         //
      //   let color = UIColor(rgb: 0xFF6800)
        // color.setStroke()

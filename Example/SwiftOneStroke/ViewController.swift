@@ -17,6 +17,7 @@ class ViewController: UIViewController {
 	@IBOutlet var labelTemplates		:UILabel!
     
     var colorIntegerArray = [0, 0, 0]
+    var strokeWidth = 4
     
 	let POINTS_LEAST_NUMBER = 5  // 绘图板上一划点集的最小数
     
@@ -68,6 +69,7 @@ class ViewController: UIViewController {
         let color = UIColor(red: CGFloat(Double(colorIntegerArray[0]) / 255.0), green: CGFloat(Double(colorIntegerArray[1]) / 255.0), blue: CGFloat(Double(colorIntegerArray[2]) / 255.0), alpha: 0.5)
         
         drawView.strokeColor = color
+        drawView.strokeWidth = self.strokeWidth
         drawView.backgroundColor = UIColor.white
         
         drawView.onDidFinishDrawing = { drawnPoints in
