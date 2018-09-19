@@ -7,275 +7,326 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C8814602140FA1D00D36C47 /* TriangleBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88145F2140FA1D00D36C47 /* TriangleBrush.swift */; };
-		0C88146321410D2E00D36C47 /* UITextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C88146221410D2E00D36C47 /* UITextFieldController.swift */; };
-		0CFC34542145088E00378244 /* ShapeRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC34532145088E00378244 /* ShapeRecognizer.swift */; };
-		0CFC345721453D3300378244 /* SwiftUnistroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC345621453D3300378244 /* SwiftUnistroke.swift */; };
-		0CFC345C2145431000378244 /* Templates in Resources */ = {isa = PBXBuildFile; fileRef = 0CFC345B2145431000378244 /* Templates */; };
-		9C19535A1AC7AE2A008231FE /* PaintingBrushSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1953581AC7AE2A008231FE /* PaintingBrushSettingsView.swift */; };
-		9C19535B1AC7AE2A008231FE /* PaintingBrushSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C1953591AC7AE2A008231FE /* PaintingBrushSettingsView.xib */; };
-		9C19535E1AC7AE4C008231FE /* BackgroundSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C19535D1AC7AE4C008231FE /* BackgroundSettingsVC.swift */; };
-		9C1953601AC7AEAF008231FE /* BackgroundSettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C19535F1AC7AEAF008231FE /* BackgroundSettingsVC.xib */; };
-		9C1953641AC7C394008231FE /* RGBColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1953631AC7C394008231FE /* RGBColorPicker.swift */; };
-		9CD69B341A90B25900533279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD69B331A90B25900533279 /* AppDelegate.swift */; };
-		9CD69B361A90B25900533279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD69B351A90B25900533279 /* ViewController.swift */; };
-		9CD69B391A90B25900533279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD69B371A90B25900533279 /* Main.storyboard */; };
-		9CD69B3B1A90B25900533279 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD69B3A1A90B25900533279 /* Images.xcassets */; };
-		9CD69B3E1A90B25900533279 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CD69B3C1A90B25900533279 /* LaunchScreen.xib */; };
-		9CD69B4A1A90B25900533279 /* DrawingBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD69B491A90B25900533279 /* DrawingBoardTests.swift */; };
-		9CDFF6E71AB91738007BD247 /* BaseBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDFF6E51AB91738007BD247 /* BaseBrush.swift */; };
-		9CDFF6E81AB91738007BD247 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDFF6E61AB91738007BD247 /* Board.swift */; };
-		9CDFF6EF1AB91894007BD247 /* EllipseBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDFF6EB1AB91894007BD247 /* EllipseBrush.swift */; };
-		9CDFF6F01AB91894007BD247 /* LineBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDFF6EC1AB91894007BD247 /* LineBrush.swift */; };
-		9CDFF6F11AB91894007BD247 /* RectangleBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDFF6ED1AB91894007BD247 /* RectangleBrush.swift */; };
-		9CDFF6F31AB91B53007BD247 /* PencilBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDFF6F21AB91B52007BD247 /* PencilBrush.swift */; };
+		0C65D8AC214D404300B40CF8 /* ShapeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65D8AB214D404300B40CF8 /* ShapeGenerator.swift */; };
+		0C65D8B2214D591100B40CF8 /* CGStrokeConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65D8B1214D591100B40CF8 /* CGStrokeConvertor.swift */; };
+		0C68CB2C21509DDA000F15CB /* AccuracyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C68CB2B21509DDA000F15CB /* AccuracyData.swift */; };
+		0CFAD260214B8E7800BD3EE4 /* StrokeAttributeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */; };
+		0CFAD26B214BA72900BD3EE4 /* LocalNotifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */; };
+		0CFAD26E214BA77900BD3EE4 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */; };
+		0CFC345E214561F100378244 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC345D214561F100378244 /* ShapeView.swift */; };
+		39F522C56E44BE92E63606A1 /* Pods_DrawingTaggingPadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE98A5918F1E6A97BB764C8 /* Pods_DrawingTaggingPadUITests.framework */; };
+		4A5D6C55A3C6C140274D5E64 /* Pods_DrawingTaggingPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1C831F042EDDDA45A05C45 /* Pods_DrawingTaggingPad.framework */; };
+		5007F7CFD7F98DE23AA624DB /* Pods_DrawingTaggingPadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9FB85C22BF5F82218F7C2D /* Pods_DrawingTaggingPadTests.framework */; };
+		64341C941BBED5510031D7C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64341C931BBED5510031D7C9 /* AppDelegate.swift */; };
+		64341C961BBED5510031D7C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64341C951BBED5510031D7C9 /* ViewController.swift */; };
+		64341C991BBED5510031D7C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64341C971BBED5510031D7C9 /* Main.storyboard */; };
+		64341C9B1BBED5510031D7C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64341C9A1BBED5510031D7C9 /* Assets.xcassets */; };
+		64341C9E1BBED5510031D7C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64341C9C1BBED5510031D7C9 /* LaunchScreen.storyboard */; };
+		64341CA91BBED5510031D7C9 /* DrawingTaggingPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64341CA81BBED5510031D7C9 /* DrawingTaggingPadTests.swift */; };
+		64341CB41BBED5510031D7C9 /* DrawingTaggingPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64341CB31BBED5510031D7C9 /* DrawingTaggingPadTests.swift */; };
+		648EF9FB1BC83E240063243A /* SwiftUnistroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648EF9FA1BC83E240063243A /* SwiftUnistroke.swift */; };
+		6495EEF41BC1539100B57B99 /* Templates in Resources */ = {isa = PBXBuildFile; fileRef = 6495EEF31BC1539100B57B99 /* Templates */; };
+		6495EEF71BC15DED00B57B99 /* StrokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6495EEF61BC15DED00B57B99 /* StrokeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9CD69B441A90B25900533279 /* PBXContainerItemProxy */ = {
+		64341CA51BBED5510031D7C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9CD69B261A90B25900533279 /* Project object */;
+			containerPortal = 64341C881BBED5510031D7C9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9CD69B2D1A90B25900533279;
-			remoteInfo = DrawingBoard;
+			remoteGlobalIDString = 64341C8F1BBED5510031D7C9;
+			remoteInfo = DrawingTaggingPad;
+		};
+		64341CB01BBED5510031D7C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64341C881BBED5510031D7C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64341C8F1BBED5510031D7C9;
+			remoteInfo = DrawingTaggingPad;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C88145F2140FA1D00D36C47 /* TriangleBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleBrush.swift; sourceTree = "<group>"; };
-		0C88146221410D2E00D36C47 /* UITextFieldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldController.swift; sourceTree = "<group>"; };
-		0CFC34532145088E00378244 /* ShapeRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeRecognizer.swift; sourceTree = "<group>"; };
-		0CFC345621453D3300378244 /* SwiftUnistroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUnistroke.swift; sourceTree = "<group>"; };
-		0CFC345B2145431000378244 /* Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Templates; sourceTree = "<group>"; };
-		9C1953581AC7AE2A008231FE /* PaintingBrushSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaintingBrushSettingsView.swift; sourceTree = "<group>"; };
-		9C1953591AC7AE2A008231FE /* PaintingBrushSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaintingBrushSettingsView.xib; sourceTree = "<group>"; };
-		9C19535D1AC7AE4C008231FE /* BackgroundSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundSettingsVC.swift; sourceTree = "<group>"; };
-		9C19535F1AC7AEAF008231FE /* BackgroundSettingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackgroundSettingsVC.xib; sourceTree = "<group>"; };
-		9C1953631AC7C394008231FE /* RGBColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBColorPicker.swift; sourceTree = "<group>"; };
-		9CD69B2E1A90B25900533279 /* DrawingTaggingPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingTaggingPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CD69B321A90B25900533279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CD69B331A90B25900533279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CD69B351A90B25900533279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9CD69B381A90B25900533279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9CD69B3A1A90B25900533279 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9CD69B3D1A90B25900533279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9CD69B431A90B25900533279 /* DrawingTaggingPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingTaggingPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CD69B481A90B25900533279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CD69B491A90B25900533279 /* DrawingBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoardTests.swift; sourceTree = "<group>"; };
-		9CDFF6E51AB91738007BD247 /* BaseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBrush.swift; sourceTree = "<group>"; };
-		9CDFF6E61AB91738007BD247 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
-		9CDFF6EB1AB91894007BD247 /* EllipseBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipseBrush.swift; sourceTree = "<group>"; };
-		9CDFF6EC1AB91894007BD247 /* LineBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineBrush.swift; sourceTree = "<group>"; };
-		9CDFF6ED1AB91894007BD247 /* RectangleBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleBrush.swift; sourceTree = "<group>"; };
-		9CDFF6F21AB91B52007BD247 /* PencilBrush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilBrush.swift; sourceTree = "<group>"; };
+		0C65D8AB214D404300B40CF8 /* ShapeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeGenerator.swift; sourceTree = "<group>"; };
+		0C65D8B1214D591100B40CF8 /* CGStrokeConvertor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGStrokeConvertor.swift; sourceTree = "<group>"; };
+		0C68CB2B21509DDA000F15CB /* AccuracyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccuracyData.swift; sourceTree = "<group>"; };
+		0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeAttributeController.swift; sourceTree = "<group>"; };
+		0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotifManager.swift; sourceTree = "<group>"; };
+		0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		0CFC345D214561F100378244 /* ShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
+		2DE1BECE3C16557D1D022BDE /* Pods-DrawingTaggingPadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawingTaggingPadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawingTaggingPadTests/Pods-DrawingTaggingPadTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B45DBA5684245E373F69B96 /* Pods-DrawingTaggingPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawingTaggingPad.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawingTaggingPad/Pods-DrawingTaggingPad.release.xcconfig"; sourceTree = "<group>"; };
+		56356B95BE2AFC9EEC9EB55C /* Pods-DrawingTaggingPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawingTaggingPadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawingTaggingPadUITests/Pods-DrawingTaggingPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		64341C901BBED5510031D7C9 /* DrawingTaggingPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingTaggingPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64341C931BBED5510031D7C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64341C951BBED5510031D7C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = DrawingTaggingPad/ViewController.swift; sourceTree = "<group>"; };
+		64341C981BBED5510031D7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64341C9A1BBED5510031D7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64341C9D1BBED5510031D7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64341C9F1BBED5510031D7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64341CA41BBED5510031D7C9 /* DrawingTaggingPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingTaggingPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64341CA81BBED5510031D7C9 /* DrawingTaggingPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTaggingPadTests.swift; sourceTree = "<group>"; };
+		64341CAA1BBED5510031D7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64341CAF1BBED5510031D7C9 /* DrawingTaggingPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingTaggingPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64341CB31BBED5510031D7C9 /* DrawingTaggingPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTaggingPadTests.swift; sourceTree = "<group>"; };
+		64341CB51BBED5510031D7C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648EF9FA1BC83E240063243A /* SwiftUnistroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingTaggingPad.swift; path = ../../Pod/Classes/SwiftUnistroke.swift; sourceTree = "<group>"; };
+		6495EEF31BC1539100B57B99 /* Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Templates; sourceTree = SOURCE_ROOT; };
+		6495EEF61BC15DED00B57B99 /* StrokeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeView.swift; sourceTree = "<group>"; };
+		93BF1B1E665DED200985DC65 /* Pods-DrawingTaggingPadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawingTaggingPadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawingTaggingPadTests/Pods-DrawingTaggingPadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D1C831F042EDDDA45A05C45 /* Pods_DrawingTaggingPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawingTaggingPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4493F9C7C7BC39081F3C173 /* Pods-DrawingTaggingPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawingTaggingPad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawingTaggingPad/Pods-DrawingTaggingPad.debug.xcconfig"; sourceTree = "<group>"; };
+		CF674FD5F08695CC3EF9E375 /* Pods-DrawingTaggingPadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawingTaggingPadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawingTaggingPadUITests/Pods-DrawingTaggingPadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE9FB85C22BF5F82218F7C2D /* Pods_DrawingTaggingPadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawingTaggingPadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE98A5918F1E6A97BB764C8 /* Pods_DrawingTaggingPadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawingTaggingPadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9CD69B2B1A90B25900533279 /* Frameworks */ = {
+		64341C8D1BBED5510031D7C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5D6C55A3C6C140274D5E64 /* Pods_DrawingTaggingPad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CD69B401A90B25900533279 /* Frameworks */ = {
+		64341CA11BBED5510031D7C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5007F7CFD7F98DE23AA624DB /* Pods_DrawingTaggingPadTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64341CAC1BBED5510031D7C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39F522C56E44BE92E63606A1 /* Pods_DrawingTaggingPadUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C88146121410D0E00D36C47 /* Util */ = {
+		0C4CF6E42148A0C100201FA5 /* Shape */ = {
 			isa = PBXGroup;
 			children = (
-				0C88146221410D2E00D36C47 /* UITextFieldController.swift */,
-				0CFC34532145088E00378244 /* ShapeRecognizer.swift */,
+				6495EEF61BC15DED00B57B99 /* StrokeView.swift */,
+				0CFC345D214561F100378244 /* ShapeView.swift */,
+			);
+			name = Shape;
+			sourceTree = "<group>";
+		};
+		0C528C52214F3610000DE653 /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				0C65D8AB214D404300B40CF8 /* ShapeGenerator.swift */,
+			);
+			name = Generator;
+			sourceTree = "<group>";
+		};
+		0C68CB2A21509DB0000F15CB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0C68CB2B21509DDA000F15CB /* AccuracyData.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		0CFAD25E214B8E5E00BD3EE4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64341C951BBED5510031D7C9 /* ViewController.swift */,
+				0CFAD25F214B8E7800BD3EE4 /* StrokeAttributeController.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0CFAD26C214BA76C00BD3EE4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				648EF9FA1BC83E240063243A /* SwiftUnistroke.swift */,
+				0CFAD26A214BA72900BD3EE4 /* LocalNotifManager.swift */,
+				0CFAD26D214BA77900BD3EE4 /* DateUtil.swift */,
+				0C65D8B1214D591100B40CF8 /* CGStrokeConvertor.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
 		};
-		0CFC345521453C5F00378244 /* SwiftOneStroke */ = {
+		64341C871BBED5510031D7C9 = {
 			isa = PBXGroup;
 			children = (
-				0CFC345621453D3300378244 /* SwiftUnistroke.swift */,
-			);
-			name = SwiftOneStroke;
-			sourceTree = "<group>";
-		};
-		9C1953571AC7AE2A008231FE /* PaintingBrushSettingsView */ = {
-			isa = PBXGroup;
-			children = (
-				9C1953581AC7AE2A008231FE /* PaintingBrushSettingsView.swift */,
-				9C1953591AC7AE2A008231FE /* PaintingBrushSettingsView.xib */,
-			);
-			path = PaintingBrushSettingsView;
-			sourceTree = "<group>";
-		};
-		9C19535C1AC7AE36008231FE /* BackgroundSettingsView */ = {
-			isa = PBXGroup;
-			children = (
-				9C19535D1AC7AE4C008231FE /* BackgroundSettingsVC.swift */,
-				9C19535F1AC7AEAF008231FE /* BackgroundSettingsVC.xib */,
-			);
-			path = BackgroundSettingsView;
-			sourceTree = "<group>";
-		};
-		9CD69B251A90B25900533279 = {
-			isa = PBXGroup;
-			children = (
-				9CD69B301A90B25900533279 /* DrawingTaggingPad */,
-				9CD69B461A90B25900533279 /* DrawingTaggingPadTests */,
-				9CD69B2F1A90B25900533279 /* Products */,
+				64341C921BBED5510031D7C9 /* DrawingTaggingPad */,
+				64341CA71BBED5510031D7C9 /* DrawingTaggingPadTests */,
+				64341CB21BBED5510031D7C9 /* DrawingTaggingPadUITests */,
+				64341C911BBED5510031D7C9 /* Products */,
+				6CD1A429CAC8B54B98544423 /* Pods */,
+				FE4DACD76F29A6E1B3B0C2CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		9CD69B2F1A90B25900533279 /* Products */ = {
+		64341C911BBED5510031D7C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CD69B2E1A90B25900533279 /* DrawingTaggingPad.app */,
-				9CD69B431A90B25900533279 /* DrawingTaggingPadTests.xctest */,
+				64341C901BBED5510031D7C9 /* DrawingTaggingPad.app */,
+				64341CA41BBED5510031D7C9 /* DrawingTaggingPadTests.xctest */,
+				64341CAF1BBED5510031D7C9 /* DrawingTaggingPadUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CD69B301A90B25900533279 /* DrawingTaggingPad */ = {
+		64341C921BBED5510031D7C9 /* DrawingTaggingPad */ = {
 			isa = PBXGroup;
 			children = (
-				0CFC345B2145431000378244 /* Templates */,
-				0CFC345521453C5F00378244 /* SwiftOneStroke */,
-				0C88146121410D0E00D36C47 /* Util */,
-				9CDFF6E41AB91738007BD247 /* Base */,
-				9CDFF6E91AB91894007BD247 /* Brushes */,
-				9C1953571AC7AE2A008231FE /* PaintingBrushSettingsView */,
-				9C19535C1AC7AE36008231FE /* BackgroundSettingsView */,
-				9CD69B331A90B25900533279 /* AppDelegate.swift */,
-				9C1953631AC7C394008231FE /* RGBColorPicker.swift */,
-				9CD69B351A90B25900533279 /* ViewController.swift */,
-				9CD69B371A90B25900533279 /* Main.storyboard */,
-				9CD69B3A1A90B25900533279 /* Images.xcassets */,
-				9CD69B3C1A90B25900533279 /* LaunchScreen.xib */,
-				9CD69B311A90B25900533279 /* Supporting Files */,
+				0C68CB2A21509DB0000F15CB /* Data */,
+				0C528C52214F3610000DE653 /* Generator */,
+				0CFAD26C214BA76C00BD3EE4 /* Util */,
+				0CFAD25E214B8E5E00BD3EE4 /* Controller */,
+				0C4CF6E42148A0C100201FA5 /* Shape */,
+				64341C931BBED5510031D7C9 /* AppDelegate.swift */,
+				64341C9C1BBED5510031D7C9 /* LaunchScreen.storyboard */,
+				64341C971BBED5510031D7C9 /* Main.storyboard */,
+				6495EEF31BC1539100B57B99 /* Templates */,
+				64341C9A1BBED5510031D7C9 /* Assets.xcassets */,
+				64341C9F1BBED5510031D7C9 /* Info.plist */,
 			);
 			name = DrawingTaggingPad;
-			path = DrawingBoard;
+			path = DrawingTaggingPad;
 			sourceTree = "<group>";
 		};
-		9CD69B311A90B25900533279 /* Supporting Files */ = {
+		64341CA71BBED5510031D7C9 /* DrawingTaggingPadTests */ = {
 			isa = PBXGroup;
 			children = (
-				9CD69B321A90B25900533279 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9CD69B461A90B25900533279 /* DrawingTaggingPadTests */ = {
-			isa = PBXGroup;
-			children = (
-				9CD69B491A90B25900533279 /* DrawingBoardTests.swift */,
-				9CD69B471A90B25900533279 /* Supporting Files */,
+				64341CA81BBED5510031D7C9 /* DrawingTaggingPadTests.swift */,
+				64341CAA1BBED5510031D7C9 /* Info.plist */,
 			);
 			name = DrawingTaggingPadTests;
-			path = DrawingBoardTests;
+			path = DrawingTaggingPadTests;
 			sourceTree = "<group>";
 		};
-		9CD69B471A90B25900533279 /* Supporting Files */ = {
+		64341CB21BBED5510031D7C9 /* DrawingTaggingPadUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9CD69B481A90B25900533279 /* Info.plist */,
+				64341CB31BBED5510031D7C9 /* DrawingTaggingPadTests.swift */,
+				64341CB51BBED5510031D7C9 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			name = DrawingTaggingPadUITests;
+			path = DrawingTaggingPadUITests;
 			sourceTree = "<group>";
 		};
-		9CDFF6E41AB91738007BD247 /* Base */ = {
+		6CD1A429CAC8B54B98544423 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9CDFF6E51AB91738007BD247 /* BaseBrush.swift */,
-				9CDFF6E61AB91738007BD247 /* Board.swift */,
+				B4493F9C7C7BC39081F3C173 /* Pods-DrawingTaggingPad.debug.xcconfig */,
+				4B45DBA5684245E373F69B96 /* Pods-DrawingTaggingPad.release.xcconfig */,
+				93BF1B1E665DED200985DC65 /* Pods-DrawingTaggingPadTests.debug.xcconfig */,
+				2DE1BECE3C16557D1D022BDE /* Pods-DrawingTaggingPadTests.release.xcconfig */,
+				56356B95BE2AFC9EEC9EB55C /* Pods-DrawingTaggingPadUITests.debug.xcconfig */,
+				CF674FD5F08695CC3EF9E375 /* Pods-DrawingTaggingPadUITests.release.xcconfig */,
 			);
-			path = Base;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		9CDFF6E91AB91894007BD247 /* Brushes */ = {
+		FE4DACD76F29A6E1B3B0C2CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9CDFF6F21AB91B52007BD247 /* PencilBrush.swift */,
-				9CDFF6EC1AB91894007BD247 /* LineBrush.swift */,
-				9CDFF6ED1AB91894007BD247 /* RectangleBrush.swift */,
-				9CDFF6EB1AB91894007BD247 /* EllipseBrush.swift */,
-				0C88145F2140FA1D00D36C47 /* TriangleBrush.swift */,
+				9D1C831F042EDDDA45A05C45 /* Pods_DrawingTaggingPad.framework */,
+				DE9FB85C22BF5F82218F7C2D /* Pods_DrawingTaggingPadTests.framework */,
+				EDE98A5918F1E6A97BB764C8 /* Pods_DrawingTaggingPadUITests.framework */,
 			);
-			path = Brushes;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9CD69B2D1A90B25900533279 /* DrawingTaggingPad */ = {
+		64341C8F1BBED5510031D7C9 /* DrawingTaggingPad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CD69B4D1A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingTaggingPad" */;
+			buildConfigurationList = 64341CB81BBED5510031D7C9 /* Build configuration list for PBXNativeTarget "DrawingTaggingPad" */;
 			buildPhases = (
-				9CD69B2A1A90B25900533279 /* Sources */,
-				9CD69B2B1A90B25900533279 /* Frameworks */,
-				9CD69B2C1A90B25900533279 /* Resources */,
+				B96EC3FAB18513ED152700CF /* [CP] Check Pods Manifest.lock */,
+				64341C8C1BBED5510031D7C9 /* Sources */,
+				64341C8D1BBED5510031D7C9 /* Frameworks */,
+				64341C8E1BBED5510031D7C9 /* Resources */,
+				FA121F2379F181F2725F7D0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DrawingTaggingPad;
-			productName = DrawingBoard;
-			productReference = 9CD69B2E1A90B25900533279 /* DrawingTaggingPad.app */;
+			productName = DrawingTaggingPad;
+			productReference = 64341C901BBED5510031D7C9 /* DrawingTaggingPad.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9CD69B421A90B25900533279 /* DrawingTaggingPadTests */ = {
+		64341CA31BBED5510031D7C9 /* DrawingTaggingPadTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CD69B501A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingTaggingPadTests" */;
+			buildConfigurationList = 64341CBB1BBED5510031D7C9 /* Build configuration list for PBXNativeTarget "DrawingTaggingPadTests" */;
 			buildPhases = (
-				9CD69B3F1A90B25900533279 /* Sources */,
-				9CD69B401A90B25900533279 /* Frameworks */,
-				9CD69B411A90B25900533279 /* Resources */,
+				A89930017E7B7D5A3C1CD7B6 /* [CP] Check Pods Manifest.lock */,
+				64341CA01BBED5510031D7C9 /* Sources */,
+				64341CA11BBED5510031D7C9 /* Frameworks */,
+				64341CA21BBED5510031D7C9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9CD69B451A90B25900533279 /* PBXTargetDependency */,
+				64341CA61BBED5510031D7C9 /* PBXTargetDependency */,
 			);
 			name = DrawingTaggingPadTests;
-			productName = DrawingBoardTests;
-			productReference = 9CD69B431A90B25900533279 /* DrawingTaggingPadTests.xctest */;
+			productName = DrawingTaggingPadTests;
+			productReference = 64341CA41BBED5510031D7C9 /* DrawingTaggingPadTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64341CAE1BBED5510031D7C9 /* DrawingTaggingPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64341CBE1BBED5510031D7C9 /* Build configuration list for PBXNativeTarget "DrawingTaggingPadUITests" */;
+			buildPhases = (
+				31BC9128EBA18F6E7869CB96 /* [CP] Check Pods Manifest.lock */,
+				64341CAB1BBED5510031D7C9 /* Sources */,
+				64341CAC1BBED5510031D7C9 /* Frameworks */,
+				64341CAD1BBED5510031D7C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64341CB11BBED5510031D7C9 /* PBXTargetDependency */,
+			);
+			name = DrawingTaggingPadUITests;
+			productName = DrawingTaggingPadUITests;
+			productReference = 64341CAF1BBED5510031D7C9 /* DrawingTaggingPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9CD69B261A90B25900533279 /* Project object */ = {
+		64341C881BBED5510031D7C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				KnownAssetTags = (
-					New,
-					Templates,
-				);
-				LastSwiftMigration = 0710;
-				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = NJU.py;
+				ORGANIZATIONNAME = "Yu Pan";
 				TargetAttributes = {
-					9CD69B2D1A90B25900533279 = {
-						CreatedOnToolsVersion = 6.2;
+					64341C8F1BBED5510031D7C9 = {
+						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 2J6GNK4Q93;
 						LastSwiftMigration = 0830;
 					};
-					9CD69B421A90B25900533279 = {
-						CreatedOnToolsVersion = 6.2;
+					64341CA31BBED5510031D7C9 = {
+						CreatedOnToolsVersion = 7.1;
 						LastSwiftMigration = 0830;
-						TestTargetID = 9CD69B2D1A90B25900533279;
+						TestTargetID = 64341C8F1BBED5510031D7C9;
+					};
+					64341CAE1BBED5510031D7C9 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 2J6GNK4Q93;
+						LastSwiftMigration = 0830;
+						TestTargetID = 64341C8F1BBED5510031D7C9;
 					};
 				};
 			};
-			buildConfigurationList = 9CD69B291A90B25900533279 /* Build configuration list for PBXProject "DrawingTaggingPad" */;
+			buildConfigurationList = 64341C8B1BBED5510031D7C9 /* Build configuration list for PBXProject "DrawingTaggingPad" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -283,32 +334,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 9CD69B251A90B25900533279;
-			productRefGroup = 9CD69B2F1A90B25900533279 /* Products */;
+			mainGroup = 64341C871BBED5510031D7C9;
+			productRefGroup = 64341C911BBED5510031D7C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9CD69B2D1A90B25900533279 /* DrawingTaggingPad */,
-				9CD69B421A90B25900533279 /* DrawingTaggingPadTests */,
+				64341C8F1BBED5510031D7C9 /* DrawingTaggingPad */,
+				64341CA31BBED5510031D7C9 /* DrawingTaggingPadTests */,
+				64341CAE1BBED5510031D7C9 /* DrawingTaggingPadUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9CD69B2C1A90B25900533279 /* Resources */ = {
+		64341C8E1BBED5510031D7C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CD69B391A90B25900533279 /* Main.storyboard in Resources */,
-				9C19535B1AC7AE2A008231FE /* PaintingBrushSettingsView.xib in Resources */,
-				9C1953601AC7AEAF008231FE /* BackgroundSettingsVC.xib in Resources */,
-				0CFC345C2145431000378244 /* Templates in Resources */,
-				9CD69B3E1A90B25900533279 /* LaunchScreen.xib in Resources */,
-				9CD69B3B1A90B25900533279 /* Images.xcassets in Resources */,
+				6495EEF41BC1539100B57B99 /* Templates in Resources */,
+				64341C9E1BBED5510031D7C9 /* LaunchScreen.storyboard in Resources */,
+				64341C9B1BBED5510031D7C9 /* Assets.xcassets in Resources */,
+				64341C991BBED5510031D7C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CD69B411A90B25900533279 /* Resources */ = {
+		64341CA21BBED5510031D7C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64341CAD1BBED5510031D7C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,68 +374,152 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31BC9128EBA18F6E7869CB96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrawingTaggingPadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A89930017E7B7D5A3C1CD7B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrawingTaggingPadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B96EC3FAB18513ED152700CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrawingTaggingPad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA121F2379F181F2725F7D0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DrawingTaggingPad/Pods-DrawingTaggingPad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChromaColorPicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawingTaggingPad/Pods-DrawingTaggingPad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		9CD69B2A1A90B25900533279 /* Sources */ = {
+		64341C8C1BBED5510031D7C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CFC345721453D3300378244 /* SwiftUnistroke.swift in Sources */,
-				9C19535A1AC7AE2A008231FE /* PaintingBrushSettingsView.swift in Sources */,
-				0C8814602140FA1D00D36C47 /* TriangleBrush.swift in Sources */,
-				9CDFF6F11AB91894007BD247 /* RectangleBrush.swift in Sources */,
-				0C88146321410D2E00D36C47 /* UITextFieldController.swift in Sources */,
-				9CDFF6F31AB91B53007BD247 /* PencilBrush.swift in Sources */,
-				9CDFF6E71AB91738007BD247 /* BaseBrush.swift in Sources */,
-				9CD69B361A90B25900533279 /* ViewController.swift in Sources */,
-				9C19535E1AC7AE4C008231FE /* BackgroundSettingsVC.swift in Sources */,
-				9CDFF6EF1AB91894007BD247 /* EllipseBrush.swift in Sources */,
-				9C1953641AC7C394008231FE /* RGBColorPicker.swift in Sources */,
-				9CD69B341A90B25900533279 /* AppDelegate.swift in Sources */,
-				9CDFF6F01AB91894007BD247 /* LineBrush.swift in Sources */,
-				9CDFF6E81AB91738007BD247 /* Board.swift in Sources */,
-				0CFC34542145088E00378244 /* ShapeRecognizer.swift in Sources */,
+				0CFC345E214561F100378244 /* ShapeView.swift in Sources */,
+				0CFAD26E214BA77900BD3EE4 /* DateUtil.swift in Sources */,
+				0C65D8B2214D591100B40CF8 /* CGStrokeConvertor.swift in Sources */,
+				648EF9FB1BC83E240063243A /* SwiftUnistroke.swift in Sources */,
+				64341C961BBED5510031D7C9 /* ViewController.swift in Sources */,
+				0CFAD260214B8E7800BD3EE4 /* StrokeAttributeController.swift in Sources */,
+				6495EEF71BC15DED00B57B99 /* StrokeView.swift in Sources */,
+				64341C941BBED5510031D7C9 /* AppDelegate.swift in Sources */,
+				0CFAD26B214BA72900BD3EE4 /* LocalNotifManager.swift in Sources */,
+				0C68CB2C21509DDA000F15CB /* AccuracyData.swift in Sources */,
+				0C65D8AC214D404300B40CF8 /* ShapeGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CD69B3F1A90B25900533279 /* Sources */ = {
+		64341CA01BBED5510031D7C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CD69B4A1A90B25900533279 /* DrawingBoardTests.swift in Sources */,
+				64341CA91BBED5510031D7C9 /* DrawingTaggingPadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64341CAB1BBED5510031D7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64341CB41BBED5510031D7C9 /* DrawingTaggingPadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9CD69B451A90B25900533279 /* PBXTargetDependency */ = {
+		64341CA61BBED5510031D7C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9CD69B2D1A90B25900533279 /* DrawingTaggingPad */;
-			targetProxy = 9CD69B441A90B25900533279 /* PBXContainerItemProxy */;
+			target = 64341C8F1BBED5510031D7C9 /* DrawingTaggingPad */;
+			targetProxy = 64341CA51BBED5510031D7C9 /* PBXContainerItemProxy */;
+		};
+		64341CB11BBED5510031D7C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64341C8F1BBED5510031D7C9 /* DrawingTaggingPad */;
+			targetProxy = 64341CB01BBED5510031D7C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9CD69B371A90B25900533279 /* Main.storyboard */ = {
+		64341C971BBED5510031D7C9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9CD69B381A90B25900533279 /* Base */,
+				64341C981BBED5510031D7C9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9CD69B3C1A90B25900533279 /* LaunchScreen.xib */ = {
+		64341C9C1BBED5510031D7C9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9CD69B3D1A90B25900533279 /* Base */,
+				64341C9D1BBED5510031D7C9 /* Base */,
 			);
-			name = LaunchScreen.xib;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9CD69B4B1A90B25A00533279 /* Debug */ = {
+		64341CB61BBED5510031D7C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -399,6 +540,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -409,22 +551,22 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		9CD69B4C1A90B25A00533279 /* Release */ = {
+		64341CB71BBED5510031D7C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -445,6 +587,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -455,117 +598,147 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		9CD69B4E1A90B25A00533279 /* Debug */ = {
+		64341CB91BBED5510031D7C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4493F9C7C7BC39081F3C173 /* Pods-DrawingTaggingPad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 2J6GNK4Q93;
-				INFOPLIST_FILE = DrawingBoard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				INFOPLIST_FILE = DrawingTaggingPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangao.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielemargutti.DrawingTaggingPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		9CD69B4F1A90B25A00533279 /* Release */ = {
+		64341CBA1BBED5510031D7C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B45DBA5684245E373F69B96 /* Pods-DrawingTaggingPad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 2J6GNK4Q93;
-				INFOPLIST_FILE = DrawingBoard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				INFOPLIST_FILE = DrawingTaggingPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangao.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielemargutti.DrawingTaggingPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		9CD69B511A90B25A00533279 /* Debug */ = {
+		64341CBC1BBED5510031D7C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93BF1B1E665DED200985DC65 /* Pods-DrawingTaggingPadTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DrawingBoardTests/Info.plist;
+				INFOPLIST_FILE = DrawingTaggingPadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangao.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielemargutti.DrawingTaggingPadTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawingTaggingPad.app/DrawingTaggingPad";
 			};
 			name = Debug;
 		};
-		9CD69B521A90B25A00533279 /* Release */ = {
+		64341CBD1BBED5510031D7C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE1BECE3C16557D1D022BDE /* Pods-DrawingTaggingPadTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DrawingBoardTests/Info.plist;
+				INFOPLIST_FILE = DrawingTaggingPadTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhangao.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielemargutti.DrawingTaggingPadTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawingTaggingPad.app/DrawingTaggingPad";
+			};
+			name = Release;
+		};
+		64341CBF1BBED5510031D7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56356B95BE2AFC9EEC9EB55C /* Pods-DrawingTaggingPadUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2J6GNK4Q93;
+				INFOPLIST_FILE = DrawingTaggingPadUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielemargutti.DrawingTaggingPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DrawingTaggingPad;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		64341CC01BBED5510031D7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF674FD5F08695CC3EF9E375 /* Pods-DrawingTaggingPadUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2J6GNK4Q93;
+				INFOPLIST_FILE = DrawingTaggingPadUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielemargutti.DrawingTaggingPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DrawingTaggingPad;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9CD69B291A90B25900533279 /* Build configuration list for PBXProject "DrawingTaggingPad" */ = {
+		64341C8B1BBED5510031D7C9 /* Build configuration list for PBXProject "DrawingTaggingPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CD69B4B1A90B25A00533279 /* Debug */,
-				9CD69B4C1A90B25A00533279 /* Release */,
+				64341CB61BBED5510031D7C9 /* Debug */,
+				64341CB71BBED5510031D7C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CD69B4D1A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingTaggingPad" */ = {
+		64341CB81BBED5510031D7C9 /* Build configuration list for PBXNativeTarget "DrawingTaggingPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CD69B4E1A90B25A00533279 /* Debug */,
-				9CD69B4F1A90B25A00533279 /* Release */,
+				64341CB91BBED5510031D7C9 /* Debug */,
+				64341CBA1BBED5510031D7C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CD69B501A90B25A00533279 /* Build configuration list for PBXNativeTarget "DrawingTaggingPadTests" */ = {
+		64341CBB1BBED5510031D7C9 /* Build configuration list for PBXNativeTarget "DrawingTaggingPadTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CD69B511A90B25A00533279 /* Debug */,
-				9CD69B521A90B25A00533279 /* Release */,
+				64341CBC1BBED5510031D7C9 /* Debug */,
+				64341CBD1BBED5510031D7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64341CBE1BBED5510031D7C9 /* Build configuration list for PBXNativeTarget "DrawingTaggingPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64341CBF1BBED5510031D7C9 /* Debug */,
+				64341CC01BBED5510031D7C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9CD69B261A90B25900533279 /* Project object */;
+	rootObject = 64341C881BBED5510031D7C9 /* Project object */;
 }
